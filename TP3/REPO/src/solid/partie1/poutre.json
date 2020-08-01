@@ -1,0 +1,82 @@
+{
+    "Name": "Poutre Part 1",
+    "ShortName":"Poutre1",
+    "Models":
+    {
+	"equations":"Elasticity"
+    },
+    // tag::materials[]
+    "Materials":
+    {
+        "Omega":
+        {
+            // "physics": "Solid",
+            // "markers":"[Omega]",
+            "E":"2.5",		// Gpa
+            // "E":"210e3",		// N/mm^2
+            "nu":"0.25",			//
+            // "nu":"0.4",			//
+            "rho":"7800e-9"		// kg/mm^3
+        }
+    },
+    // end::materials[]
+    // tag::boundaryconditions[]
+    "BoundaryConditions":
+    {
+        "displacement":
+        {
+            "Dirichlet":
+            {
+                "Gamma1":
+                {
+                    "expr":"{0,0}"
+                }
+            },
+            "Neumann_scalar":
+            {
+                "Gamma2":
+                {
+                    "expr":"0"
+                },
+                "Gamma3":
+                {
+                    "expr":"0"
+                },
+                "Gamma4":
+                {
+                    "expr":"0"
+                }
+            },
+            "VolumicForces":
+            {
+                "Omega":
+                {
+                    "expr":"{0,1}"
+                }
+            }
+        }
+    },
+    // end::boundaryconditions[]
+    "PostProcess":
+    {
+        "Exports":
+        {
+                // "fields":["displacement"]
+                // "fields":["displacement","Von-Mises","Tresca","principal-stresses"]
+                "fields":["displacement","Von-Mises","Tresca","normal-stress","principal-stresses"]
+        },
+        "Measures":
+        {
+            "VolumeVariation":"Omega"
+            // "Maximum":
+            // {
+            //     "max_displacement":
+            //     {
+            //         "markers":"Omega",
+            //         "fields":["displacement"]
+            //     }
+            // }            
+        }
+    }
+
+}

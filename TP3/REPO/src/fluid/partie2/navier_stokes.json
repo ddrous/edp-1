@@ -1,0 +1,77 @@
+{
+    "Name": "Navier Stokes Incompressible",
+    "ShortName":"navier_stokes",
+    "Models":
+    {
+        "equations":"Navier-Stokes"
+    },
+    "Materials":
+    {
+        "Omega":
+        {
+            "rho":"1",
+            "mu":"5e-2"
+        }
+    },
+    // "InitialConditions":
+    // {
+    //     "velocity": 
+    //     {
+    //         "Expression": 
+    //         {
+    //             "ic_if_Gamma_in": 
+    //             {
+    //                 "markers":"Gamma_in", 
+    //                 "expr":"{4*y*(1-y), 0}:y" 
+    //             },
+    //             "ic_else": 
+    //             {
+    //                 "markers":["Omega", "Gamma_0", "Gamma_out", "Gauche_Droite", "Bas_Haut"], 
+    //                 // "markers":["Omega", "Gamma_0", "Gamma_out"], 
+    //                 "expr":"{0, 0}" 
+    //             }              
+    //         }
+    //     }
+    // },
+    "BoundaryConditions":
+    {
+        "velocity":
+        {
+            "Dirichlet":
+            {
+                "Gamma_in":
+                {
+                    "expr":"{4*y*(1-y), 0}:y"
+                },
+                "Gamma_0_1":
+                {
+                    "expr":"{0, 0}"
+                },
+                "Gamma_0_2":
+                {
+                    "expr":"{0, 0}"
+                }
+            }
+            // ,
+            // "Neumann_scalar":
+            // {
+            //     "Gamma_out":
+            //     {
+            //         "expr":"0"
+            //     }
+            // }
+        }
+    },
+ 
+    "PostProcess":
+    {
+        "Exports":
+        {
+            "fields":["velocity","pressure","pid"]
+        },
+          "Measures":
+        {
+            "Forces": "Gamma_0_2"
+        }
+    }
+}

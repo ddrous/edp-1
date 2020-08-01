@@ -1,0 +1,95 @@
+{
+    "Name": "Stokes sur un domaine",
+    "ShortName":"stokes",
+    "Models":
+    {
+        "equations":"Stokes"
+    },
+    "Parameters":
+    {
+        // "pi":"3.1415926",
+        "nu":"0.035",
+        "lambda":"(1.0/(2*0.035)) - sqrt((1.0/(4*0.035^2)) + 4*pi^2)"
+        // "lambda":"(1.0/(2*nu)) - sqrt((1.0/(4*nu^2)) + 4*pi^2):nu"
+        // "lambda":"-1.32"
+    },
+    "Materials":
+    {
+        "Omega":{
+            "rho":"1",       // air-like fluid
+            "mu":"0.035"
+        }
+    },
+    "BoundaryConditions":
+    {
+        "velocity":
+        {
+            "Dirichlet":
+            {
+                "Gamma":
+                {
+                    // "expr":"{0, 1}"
+                    "expr":"{1-exp(lambda*x)*cos(2*pi*y), lambda*exp(lambda*x)*sin(2*pi*y)/(2*pi)}:x:y:lambda"
+                }
+            }
+        }
+        ,
+        "fluid":
+        {
+            "VolumicForces":
+            {
+                "Omega":
+                {
+                    "expr":"{nu*(lambda^2-4*pi^2)*exp(lambda*x)*cos(2*pi*y) - lambda*exp(2*lambda*x), -nu*lambda*(lambda^2-4*pi^2)*exp(lambda*x)*sin(2*pi*y)/(2*pi)}:x:y:nu:lambda"
+                }
+            }
+        }
+
+    },
+ 
+    "PostProcess":
+    {
+        "Exports":
+        {
+            "fields":["velocity","pressure","pid"]
+        },
+          "Measures":
+        {
+            "Statistics":
+            {
+                "mean_pressure":
+                {
+                    "type": "mean",
+                    "field": "pressure"
+                }
+            },
+            "Norm":
+            {
+                "L2-error_u":           // Erreur L2 de u
+                {
+                    "type":"L2-error", 
+                    "field":"velocity", 
+                    "solution":"{1-exp(lambda*x)*cos(2*pi*y), lambda*exp(lambda*x)*sin(2*pi*y)/(2*pi)}:x:y:lambda"
+                }
+
+                ,
+                "H1-error_u":           // Erreur H1 de u
+                {
+                    "type":"H1-error", 
+                    "field":"velocity", 
+                    "solution":"{1-exp(lambda*x)*cos(2*pi*y), lambda*exp(lambda*x)*sin(2*pi*y)/(2*pi)}:x:y:lambda",
+                    "grad_solution":"{-lambda*exp(lambda*x)*cos(2*pi*y), 2*pi*exp(lambda*x)*sin(2*pi*y), (lambda^2)*exp(lambda*x)*sin(2*pi*y)/(2*pi), lambda*exp(lambda*x)*cos(2*pi*y)}:x:y:lambda"
+                }
+
+                ,
+                "L2_error_p":            // Erreur L2 de p
+                {
+                    "type":"L2-error", 
+                    "field":"pressure", 
+                    // "solution":"-exp(2*lambda*x)/2:x:y:lambda"
+                    "solution":"-exp(2*lambda*x)/2 + (exp(2*lambda)-exp(-lambda))/(6*lambda):x:y:lambda"
+                }
+            }
+        }
+    }
+}

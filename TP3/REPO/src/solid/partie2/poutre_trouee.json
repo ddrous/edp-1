@@ -1,0 +1,91 @@
+{
+    "Name": "Poutre Part 2",
+    "ShortName":"Poutre2",
+    "Models":
+    {
+	"equations":"Elasticity"
+    },
+    // tag::materials[]
+    "Materials":
+    {
+        "Omega":
+        {
+            // "physics": "Solid",
+            // "markers":"[Omega]",
+            // "E":"0.2999e9",		// pa
+            "E":"2.500e9",		// Pa
+            // "E":"125000e9",		// Pa
+            // "nu":"0.4995",			//
+            "nu":"0.25",			//
+            // "nu":"0.4",			//
+            "rho":"8100"		// kg/mm^3
+        }
+    },
+    // end::materials[]
+    // tag::boundaryconditions[]
+    "BoundaryConditions":
+    {
+        "displacement":
+        {
+            "Dirichlet":
+            {
+                "Gamma2":
+                {
+                    "expr":"{0,0}"
+                },
+                "Gamma4":
+                {
+                    "expr":"{0,0}"
+                }
+            },
+            "Neumann_vectorial":
+            {
+                "Trou1":
+                {
+                    "expr":"{0, 0}"
+                },
+                "Trou2":
+                {
+                    "expr":"{0, 0}"
+                },
+                "Gamma1":
+                {
+                    "expr":"{0, 1}"
+                },
+                "Gamma3":
+                {
+                    "expr":"{0, -1}"
+                }
+            },
+            "VolumicForces":
+            {
+                "Omega":
+                {
+                    "expr":"{0,0}"
+                }
+            }
+        }
+    },
+    // end::boundaryconditions[]
+    "PostProcess":
+    {
+        "Exports":
+        {
+                // "fields":["displacement"]
+                "fields":["displacement","Von-Mises","Tresca","principal-stresses", "normal-stress"]
+        },
+        "Measures":
+        {
+            "VolumeVariation":"Omega"
+            // "Maximum":
+            // {
+            //     "max_displacement":
+            //     {
+            //         "markers":"Omega",
+            //         "fields":["displacement"]
+            //     }
+            // }            
+        }
+    }
+
+}
