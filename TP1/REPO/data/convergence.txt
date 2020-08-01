@@ -1,0 +1,29 @@
+feelpp_qs_laplacian_2d --config-file=triangle.cfg --checker.check=true --checker.solution="sin(pi*x)*cos(pi*y):x:y" --gmsh.hsize=0.05 --gmsh.filename="/feel/omega.geo"
+
+h=0.8
+[no checks]||u-u_h||_H1=0.924785
+[no checks]||u-u_h||_L2=0.0698802
+
+h=0.4
+[no checks]||u-u_h||_H1=0.269597
+[no checks]||u-u_h||_L2=0.0105953
+
+h=0.2
+[no checks]||u-u_h||_H1=0.0778948
+[no checks]||u-u_h||_L2=0.00163551
+
+h=0.1
+[no checks]||u-u_h||_H1=0.0205284
+[no checks]||u-u_h||_L2=0.000217006
+
+h=0.05
+[no checks]||u-u_h||_H1=0.00520712
+[no checks]||u-u_h||_L2=2.7499e-05
+
+h=0.025
+[no checks]||u-u_h||_H1=0.00134031
+[no checks]||u-u_h||_L2=3.58227e-06
+
+h=0.125
+[no checks]||u-u_h||_H1=0.000336841
+[no checks]||u-u_h||_L2=4.53486e-07

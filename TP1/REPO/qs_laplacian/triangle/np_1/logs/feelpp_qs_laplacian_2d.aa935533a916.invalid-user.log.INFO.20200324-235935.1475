@@ -1,0 +1,191 @@
+Log file created at: 2020/03/24 23:59:35
+Running on machine: aa935533a916
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0324 23:59:35.121006  1475 environment.cpp:1601] File /feel/omega.geo found
+I0324 23:59:35.154336  1475 environment.cpp:1601] File /feel/omega.geo found
+I0324 23:59:35.157738  1475 gmsh.cpp:462] Generate mesh on processor 0/1
+I0324 23:59:35.157826  1475 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ElementOrder not found ! 
+I0324 23:59:35.157990  1475 gmsh.cpp:388] [Gmsh::generateGeo] Parameter hsize  = (?1$1) = 0.1; now ! (overwrite geo param h !)
+I0324 23:59:35.159708  1475 gmsh.cpp:440] "omega.geo" exists and its content correspond to the expected geometry
+I0324 23:59:35.159724  1475 gmsh.cpp:479] Mesh file omega.msh generated from geometry omega.geo
+I0324 23:59:35.159729  1475 gmsh.cpp:480]  - does mesh file name exists : true
+I0324 23:59:35.160959  1475 gmsh.cpp:485] Generating omega.msh...
+I0324 23:59:35.161036  1475 gmsh.cpp:660] [Gmsh::generate] env.part: 1
+I0324 23:59:35.161046  1475 gmsh.cpp:661] [Gmsh::generate] partitions: 1
+I0324 23:59:35.161051  1475 gmsh.cpp:662] [Gmsh::generate] partitioner: 1
+I0324 23:59:35.189194  1475 gmsh.cpp:752] Writing GMSH file omega.msh in ascii format
+I0324 23:59:35.203073  1475 gmsh.cpp:489] Generating omega.msh done.
+I0324 23:59:35.212829  1475 gmsh.cpp:501] Broadcast mesh file omega.msh to all other mpi processes, (created: 1)
+I0324 23:59:35.212968  1475 importergmsh.hpp:992] Reading Msh file omega.msh
+I0324 23:59:35.215593  1475 importergmsh.hpp:1015] GMSH mesh file version : 4.1 format: ascii size of double: 8
+I0324 23:59:35.221678  1475 meshimpl.hpp:1096] We have 64 faces in the database
+I0324 23:59:35.223970  1475 meshimpl.hpp:1370] We have now 1202 faces in the mesh
+I0324 23:59:35.224349  1475 meshimpl.hpp:1908] update boundary points...
+I0324 23:59:35.224378  1475 meshimpl.hpp:1928] update boundary elements...
+I0324 23:59:35.228672  1475 meshimpl.hpp:569] h average : 0.0995885
+I0324 23:59:35.228699  1475 meshimpl.hpp:570]     h min : 0.0798706
+I0324 23:59:35.228705  1475 meshimpl.hpp:571]     h max : 0.126753
+I0324 23:59:35.879272  1475 ginac.cpp:149] Parsing sin(3.1400000000000001*x)*cos(3.1400000000000001*y):x:y using GiNaC
+I0324 23:59:35.879307  1475 ginac.cpp:171]  . Number of symbols 2
+I0324 23:59:35.879310  1475 ginac.cpp:172]  . symbols : (x,y)
+I0324 23:59:35.879317  1475 ginac.cpp:173]  . Number of params 0
+I0324 23:59:35.879320  1475 ginac.cpp:174]  . symbols : ()
+I0324 23:59:35.879323  1475 ginac.cpp:177] Inserting symbols in symbol table
+I0324 23:59:35.879328  1475 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0324 23:59:35.879331  1475 ginac.cpp:208]  . table : (x, x) (y, y)
+I0324 23:59:35.879362  1475 ginac.cpp:211] Defining parser
+I0324 23:59:35.879405  1475 ginac.cpp:214] parse expression: sin(3.1400000000000001*x)*cos(3.1400000000000001*y)
+I0324 23:59:35.879544  1475 ginac.cpp:233] e=cos((3.1400000000000001)*y)*sin((3.1400000000000001)*x)
+I0324 23:59:36.093940  1475 ginac.cpp:149] Parsing {-3.1400000000000001*cos(3.1400000000000001*x)*cos(3.1400000000000001*y),3.1400000000000001*sin(3.1400000000000001*x)*sin(3.1400000000000001*y)}:x:y using GiNaC
+I0324 23:59:36.093967  1475 ginac.cpp:171]  . Number of symbols 2
+I0324 23:59:36.093976  1475 ginac.cpp:172]  . symbols : (x,y)
+I0324 23:59:36.093983  1475 ginac.cpp:173]  . Number of params 0
+I0324 23:59:36.093988  1475 ginac.cpp:174]  . symbols : ()
+I0324 23:59:36.094010  1475 ginac.cpp:177] Inserting symbols in symbol table
+I0324 23:59:36.094018  1475 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0324 23:59:36.094030  1475 ginac.cpp:208]  . table : (x, x) (y, y)
+I0324 23:59:36.094043  1475 ginac.cpp:211] Defining parser
+I0324 23:59:36.094074  1475 ginac.cpp:214] parse expression: {-3.1400000000000001*cos(3.1400000000000001*x)*cos(3.1400000000000001*y),3.1400000000000001*sin(3.1400000000000001*x)*sin(3.1400000000000001*y)}
+I0324 23:59:36.094229  1475 ginac.cpp:233] e={-(3.1400000000000001)*cos((3.1400000000000001)*x)*cos((3.1400000000000001)*y),(3.1400000000000001)*sin((3.1400000000000001)*x)*sin((3.1400000000000001)*y)}
+I0324 23:59:36.310132  1475 ginac.cpp:149] Parsing 1 using GiNaC
+I0324 23:59:36.310153  1475 ginac.cpp:171]  . Number of symbols 0
+I0324 23:59:36.310159  1475 ginac.cpp:172]  . symbols : ()
+I0324 23:59:36.310166  1475 ginac.cpp:173]  . Number of params 0
+I0324 23:59:36.310170  1475 ginac.cpp:174]  . symbols : ()
+I0324 23:59:36.310175  1475 ginac.cpp:177] Inserting symbols in symbol table
+I0324 23:59:36.310182  1475 ginac.cpp:197] Inserting params and in symbol table : ()
+I0324 23:59:36.310194  1475 ginac.cpp:208]  . table : 
+I0324 23:59:36.310197  1475 ginac.cpp:211] Defining parser
+I0324 23:59:36.310218  1475 ginac.cpp:214] parse expression: 1
+I0324 23:59:36.310236  1475 ginac.cpp:233] e=1
+I0324 23:59:36.310274  1475 ginac.cpp:149] Parsing -3.1400000000000001*nx*cos(3.1400000000000001*x)*cos(3.1400000000000001*y) + 3.1400000000000001*ny*sin(3.1400000000000001*x)*sin(3.1400000000000001*y):nx:ny:x:y using GiNaC
+I0324 23:59:36.310292  1475 ginac.cpp:171]  . Number of symbols 4
+I0324 23:59:36.310302  1475 ginac.cpp:172]  . symbols : (nx,ny,x,y)
+I0324 23:59:36.310310  1475 ginac.cpp:173]  . Number of params 0
+I0324 23:59:36.310317  1475 ginac.cpp:174]  . symbols : ()
+I0324 23:59:36.310325  1475 ginac.cpp:177] Inserting symbols in symbol table
+I0324 23:59:36.317265  1475 ginac.cpp:197] Inserting params and in symbol table : (nx,ny,x,y)
+I0324 23:59:36.317283  1475 ginac.cpp:208]  . table : (nx, nx) (ny, ny) (x, x) (y, y)
+I0324 23:59:36.317294  1475 ginac.cpp:211] Defining parser
+I0324 23:59:36.317329  1475 ginac.cpp:214] parse expression: -3.1400000000000001*nx*cos(3.1400000000000001*x)*cos(3.1400000000000001*y) + 3.1400000000000001*ny*sin(3.1400000000000001*x)*sin(3.1400000000000001*y)
+I0324 23:59:36.317512  1475 ginac.cpp:233] e=(3.1400000000000001)*sin((3.1400000000000001)*x)*ny*sin((3.1400000000000001)*y)-(3.1400000000000001)*nx*cos((3.1400000000000001)*x)*cos((3.1400000000000001)*y)
+I0324 23:59:36.519373  1475 ginac.cpp:149] Parsing 19.719200000000001*sin(3.1400000000000001*x)*cos(3.1400000000000001*y):x:y using GiNaC
+I0324 23:59:36.519420  1475 ginac.cpp:171]  . Number of symbols 2
+I0324 23:59:36.519428  1475 ginac.cpp:172]  . symbols : (x,y)
+I0324 23:59:36.519434  1475 ginac.cpp:173]  . Number of params 0
+I0324 23:59:36.519439  1475 ginac.cpp:174]  . symbols : ()
+I0324 23:59:36.519444  1475 ginac.cpp:177] Inserting symbols in symbol table
+I0324 23:59:36.519450  1475 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0324 23:59:36.519470  1475 ginac.cpp:208]  . table : (x, x) (y, y)
+I0324 23:59:36.519520  1475 ginac.cpp:211] Defining parser
+I0324 23:59:36.519549  1475 ginac.cpp:214] parse expression: 19.719200000000001*sin(3.1400000000000001*x)*cos(3.1400000000000001*y)
+I0324 23:59:36.519681  1475 ginac.cpp:233] e=(19.719200000000001)*cos((3.1400000000000001)*y)*sin((3.1400000000000001)*x)
+I0324 23:59:36.720208  1475 ginac.cpp:149] Parsing sin(3.1400000000000001*x)*cos(3.1400000000000001*y):x:y using GiNaC
+I0324 23:59:36.720247  1475 ginac.cpp:171]  . Number of symbols 2
+I0324 23:59:36.720252  1475 ginac.cpp:172]  . symbols : (x,y)
+I0324 23:59:36.720260  1475 ginac.cpp:173]  . Number of params 0
+I0324 23:59:36.720268  1475 ginac.cpp:174]  . symbols : ()
+I0324 23:59:36.720273  1475 ginac.cpp:177] Inserting symbols in symbol table
+I0324 23:59:36.720278  1475 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0324 23:59:36.720286  1475 ginac.cpp:208]  . table : (x, x) (y, y)
+I0324 23:59:36.720299  1475 ginac.cpp:211] Defining parser
+I0324 23:59:36.720362  1475 ginac.cpp:214] parse expression: sin(3.1400000000000001*x)*cos(3.1400000000000001*y)
+I0324 23:59:36.720444  1475 ginac.cpp:233] e=sin((3.1400000000000001)*x)*cos((3.1400000000000001)*y)
+I0324 23:59:36.720582  1475 ginac.cpp:149] Parsing 1 using GiNaC
+I0324 23:59:36.720592  1475 ginac.cpp:171]  . Number of symbols 0
+I0324 23:59:36.720595  1475 ginac.cpp:172]  . symbols : ()
+I0324 23:59:36.720600  1475 ginac.cpp:173]  . Number of params 0
+I0324 23:59:36.720604  1475 ginac.cpp:174]  . symbols : ()
+I0324 23:59:36.720609  1475 ginac.cpp:177] Inserting symbols in symbol table
+I0324 23:59:36.720613  1475 ginac.cpp:197] Inserting params and in symbol table : ()
+I0324 23:59:36.720618  1475 ginac.cpp:208]  . table : 
+I0324 23:59:36.720623  1475 ginac.cpp:211] Defining parser
+I0324 23:59:36.720640  1475 ginac.cpp:214] parse expression: 1
+I0324 23:59:36.720650  1475 ginac.cpp:233] e=1
+I0324 23:59:36.720685  1475 ginac.cpp:149] Parsing -3.1400000000000001*nx*cos(3.1400000000000001*x)*cos(3.1400000000000001*y) + 3.1400000000000001*ny*sin(3.1400000000000001*x)*sin(3.1400000000000001*y) - sin(3.1400000000000001*x)*cos(3.1400000000000001*y):nx:ny:x:y using GiNaC
+I0324 23:59:36.720710  1475 ginac.cpp:171]  . Number of symbols 4
+I0324 23:59:36.720715  1475 ginac.cpp:172]  . symbols : (nx,ny,x,y)
+I0324 23:59:36.720721  1475 ginac.cpp:173]  . Number of params 0
+I0324 23:59:36.720726  1475 ginac.cpp:174]  . symbols : ()
+I0324 23:59:36.720731  1475 ginac.cpp:177] Inserting symbols in symbol table
+I0324 23:59:36.720736  1475 ginac.cpp:197] Inserting params and in symbol table : (nx,ny,x,y)
+I0324 23:59:36.720741  1475 ginac.cpp:208]  . table : (nx, nx) (ny, ny) (x, x) (y, y)
+I0324 23:59:36.720748  1475 ginac.cpp:211] Defining parser
+I0324 23:59:36.720762  1475 ginac.cpp:214] parse expression: -3.1400000000000001*nx*cos(3.1400000000000001*x)*cos(3.1400000000000001*y) + 3.1400000000000001*ny*sin(3.1400000000000001*x)*sin(3.1400000000000001*y) - sin(3.1400000000000001*x)*cos(3.1400000000000001*y)
+I0324 23:59:36.726919  1475 ginac.cpp:233] e=-(3.1400000000000001)*cos((3.1400000000000001)*y)*nx*cos((3.1400000000000001)*x)+(3.1400000000000001)*sin((3.1400000000000001)*y)*ny*sin((3.1400000000000001)*x)-cos((3.1400000000000001)*y)*sin((3.1400000000000001)*x)
+I0324 23:59:37.003434  1475 element_impl.hpp:268] creating element u : u
+I0324 23:59:37.003448  1475 element_impl.hpp:268] creating element g : u
+I0324 23:59:37.009202  1475 integrator.hpp:988] [integrator::assemble FormType& __form, mpl::int_<MESH_ELEMENTS> /**/, mpl::bool_<true>
+I0324 23:59:37.052302  1475 integrator.hpp:924] [integrator::assemble bilinear form] with_relation_mesh (same_mesh: 1 test_related_to_trial: 1)
+I0324 23:59:37.052326  1475 integrator.hpp:988] [integrator::assemble FormType& __form, mpl::int_<MESH_ELEMENTS> /**/, mpl::bool_<true>
+I0324 23:59:37.074311  1475 integrator.hpp:924] [integrator::assemble bilinear form] with_relation_mesh (same_mesh: 1 test_related_to_trial: 1)
+I0324 23:59:37.087644  1475 matrixpetsc.cpp:1766] MatrixPETSc:: zeroRows seq elimination
+I0324 23:59:37.087671  1475 matrixpetsc.cpp:1807] MatrixPETSc:: zeroRows seq unsymmetric
+I0324 23:59:37.089174  1475 functionspetsc.cpp:39] mat solver package before 6
+I0324 23:59:37.089200  1475 functionspetsc.cpp:264] mat solver package is mumps
+I0324 23:59:37.106741  1475 solverlinearpetsc.cpp:642] [solverlinearpetsc] reason = 2
+I0324 23:59:37.106930  1475 exporterimpl.hpp:219] [Exporter] format :  ensightgold
+I0324 23:59:37.106935  1475 exporterimpl.hpp:220] [Exporter] N      :  1
+I0324 23:59:37.108311  1475 element_impl.hpp:268] creating element field : field
+I0324 23:59:37.108472  1475 element_impl.hpp:268] creating element pid : field
+I0324 23:59:37.112088  1475 element_impl.hpp:268] creating element p : 
+I0324 23:59:37.112987  1475 element_impl.hpp:268] creating element u : u
+I0324 23:59:37.116367  1475 element_impl.hpp:268] creating element u : u
+I0324 23:59:37.119711  1475 element_impl.hpp:268] creating element k : u
+I0324 23:59:37.120694  1475 element_impl.hpp:268] creating element f : u
+I0324 23:59:37.122097  1475 element_impl.hpp:268] creating element g : u
+I0324 23:59:37.123437  1475 element_impl.hpp:268] creating element r_1 : u
+I0324 23:59:37.124531  1475 element_impl.hpp:268] creating element r_2 : u
+I0324 23:59:37.126364  1475 element_impl.hpp:268] creating element solution : u
+I0324 23:59:37.127472  1475 element_impl.hpp:268] creating element flux : u
+I0324 23:59:37.128649  1475 element_impl.hpp:268] creating element flux : u
+I0324 23:59:37.179561  1475 exporterensightgold_impl.hpp:1239] writing part 5
+I0324 23:59:37.187343  1475 exporterensightgold_impl.hpp:1352] ExporterEnsightGold::writeVariableFiles Nodal: 8
+I0324 23:59:37.187359  1475 exporterensightgold_impl.hpp:1353] ExporterEnsightGold::writeVariableFiles Element: 2
+I0324 23:59:37.634332  1475 ginac.cpp:149] Parsing sin(3.1400000000000001*x)*cos(3.1400000000000001*y):x:y using GiNaC
+I0324 23:59:37.634383  1475 ginac.cpp:171]  . Number of symbols 2
+I0324 23:59:37.634438  1475 ginac.cpp:172]  . symbols : (x,y)
+I0324 23:59:37.634456  1475 ginac.cpp:173]  . Number of params 0
+I0324 23:59:37.634461  1475 ginac.cpp:174]  . symbols : ()
+I0324 23:59:37.634466  1475 ginac.cpp:177] Inserting symbols in symbol table
+I0324 23:59:37.634559  1475 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0324 23:59:37.634692  1475 ginac.cpp:208]  . table : (x, x) (y, y)
+I0324 23:59:37.634703  1475 ginac.cpp:211] Defining parser
+I0324 23:59:37.634732  1475 ginac.cpp:214] parse expression: sin(3.1400000000000001*x)*cos(3.1400000000000001*y)
+I0324 23:59:37.635027  1475 ginac.cpp:233] e=cos((3.1400000000000001)*y)*sin((3.1400000000000001)*x)
+I0324 23:59:37.642105  1475 ginac.cpp:149] Parsing sin(3.1400000000000001*x)*cos(3.1400000000000001*y):x:y using GiNaC
+I0324 23:59:37.642132  1475 ginac.cpp:171]  . Number of symbols 2
+I0324 23:59:37.642138  1475 ginac.cpp:172]  . symbols : (x,y)
+I0324 23:59:37.642150  1475 ginac.cpp:173]  . Number of params 0
+I0324 23:59:37.642155  1475 ginac.cpp:174]  . symbols : ()
+I0324 23:59:37.642163  1475 ginac.cpp:177] Inserting symbols in symbol table
+I0324 23:59:37.642171  1475 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0324 23:59:37.642177  1475 ginac.cpp:208]  . table : (x, x) (y, y)
+I0324 23:59:37.642186  1475 ginac.cpp:211] Defining parser
+I0324 23:59:37.642211  1475 ginac.cpp:214] parse expression: sin(3.1400000000000001*x)*cos(3.1400000000000001*y)
+I0324 23:59:37.642285  1475 ginac.cpp:233] e=cos((3.1400000000000001)*y)*sin((3.1400000000000001)*x)
+I0324 23:59:37.642395  1475 ginac.cpp:149] Parsing sin(3.1400000000000001*x)*cos(3.1400000000000001*y):x:y using GiNaC
+I0324 23:59:37.642406  1475 ginac.cpp:171]  . Number of symbols 2
+I0324 23:59:37.642410  1475 ginac.cpp:172]  . symbols : (x,y)
+I0324 23:59:37.642416  1475 ginac.cpp:173]  . Number of params 0
+I0324 23:59:37.642419  1475 ginac.cpp:174]  . symbols : ()
+I0324 23:59:37.642423  1475 ginac.cpp:177] Inserting symbols in symbol table
+I0324 23:59:37.642432  1475 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0324 23:59:37.642438  1475 ginac.cpp:208]  . table : (x, x) (y, y)
+I0324 23:59:37.642446  1475 ginac.cpp:211] Defining parser
+I0324 23:59:37.642493  1475 ginac.cpp:214] parse expression: sin(3.1400000000000001*x)*cos(3.1400000000000001*y)
+I0324 23:59:37.642540  1475 ginac.cpp:233] e=cos((3.1400000000000001)*y)*sin((3.1400000000000001)*x)
+I0324 23:59:37.896699  1475 environment.cpp:2390] Environment::clearSomeMemory before: PETSC get current memory usage (resident memory): 142062  KBytes 142.062  MBytes 0.142062 GBytes
+I0324 23:59:37.896751  1475 environment.cpp:2395] Environment::clearSomeMemory before: PETSC get current PETSC Malloc usage: 0  KBytes 0 MBytes 0 GBytes
+I0324 23:59:37.896764  1475 environment.cpp:2397] Environment::clearSomeMemory before: PETSC get maximum PETSC Malloc usage(largest memory ever used so far): 0  KBytes 0 MBytes 0 GBytes
+I0324 23:59:37.896791  1475 backendpetsc.cpp:99] Deleting linear solver petsc
+I0324 23:59:37.896893  1475 backendpetsc.cpp:103] Deleting backend petsc
+I0324 23:59:37.896900  1475 preconditionerpetsc.cpp:278] PreconditionerPetsc<T>::clear
+I0324 23:59:37.896905  1475 preconditionerpetsc.cpp:288] calling PCDestroy
+I0324 23:59:37.897090  1475 backend.cpp:139] Sending delete signal to all observers... 
+I0324 23:59:37.897301  1475 preconditionerpetsc.cpp:278] PreconditionerPetsc<T>::clear
+I0324 23:59:37.897308  1475 backend.cpp:139] Sending delete signal to all observers... 
+I0324 23:59:37.897686  1475 preconditionerpetsc.cpp:278] PreconditionerPetsc<T>::clear
+I0324 23:59:37.898607  1475 environment.cpp:2390] Environment::clearSomeMemory after: PETSC get current memory usage (resident memory): 142062  KBytes 142.062  MBytes 0.142062 GBytes
+I0324 23:59:37.898665  1475 environment.cpp:2395] Environment::clearSomeMemory after: PETSC get current PETSC Malloc usage: 0  KBytes 0 MBytes 0 GBytes
+I0324 23:59:37.898674  1475 environment.cpp:2397] Environment::clearSomeMemory after: PETSC get maximum PETSC Malloc usage(largest memory ever used so far): 0  KBytes 0 MBytes 0 GBytes

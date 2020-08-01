@@ -1,0 +1,890 @@
+{
+    "journal": {
+        "version": "0.1.0",
+        "time": {
+            "time_t": "1585103880",
+            "gm": "Wed Mar 25 02:38:00 2020 GMT",
+            "local": "Wed Mar 25 02:38:00 2020 UTC"
+        },
+        "checkpoints": {
+            "number": "2",
+            "checkpoint-1": {
+                "time": {
+                    "time_t": "1585103881",
+                    "gm": "Wed Mar 25 02:38:01 2020 GMT",
+                    "local": "Wed Mar 25 02:38:01 2020 UTC"
+                }
+            },
+            "checkpoint-2": {
+                "time": {
+                    "time_t": "1585103884",
+                    "gm": "Wed Mar 25 02:38:04 2020 GMT",
+                    "local": "Wed Mar 25 02:38:04 2020 UTC"
+                }
+            }
+        }
+    },
+    "Environment": {
+        "application": {
+            "name": "qs_laplacian"
+        },
+        "run": {
+            "uuid": "1e22433f-c81b-441c-bb0d-b056e5ce03a6",
+            "directories": {
+                "app": "\/feel\/qs_laplacian\/triangle\/np_1",
+                "export": "\/feel\/qs_laplacian\/triangle\/np_1\/exports",
+                "logs": "\/feel\/qs_laplacian\/triangle\/np_1\/logs",
+                "exprs": "\/feel\/qs_laplacian\/triangle\/exprs",
+                "downloads": "\/feel\/qs_laplacian\/triangle\/downloads"
+            },
+            "number_processors": "1",
+            "command-line": "feelpp_qs_laplacian_2d --config-file=triangle.cfg --checker.check=true --checker.solution=((x*x+y*y)^(1\/6))*sin((2\/3)*atan(y\/x)):x:y --gmsh.hsize=0.05 --gmsh.filename=\/omega_2.geo",
+            "config-files": [
+                "\/feel\/triangle.cfg"
+            ]
+        },
+        "software": {
+            "boost": {
+                "version": "1_67"
+            },
+            "mpi": {
+                "version": "3.1",
+                "library": "openmpi",
+                "openmpi": {
+                    "version": {
+                        "major": "3",
+                        "minor": "1",
+                        "release": "3"
+                    }
+                }
+            },
+            "petsc": {
+                "version": {
+                    "major": "3",
+                    "minor": "11",
+                    "subminor": "3",
+                    "patch": "0",
+                    "release": "1"
+                },
+                "date": {
+                    "release": "Mar, 29, 2019",
+                    "version": "Jun, 26, 2019"
+                }
+            }
+        },
+        "hardware": {
+            "aa935533a916": {
+                "backend": "kwsys",
+                "os": {
+                    "name": "Linux",
+                    "release": "4.19.76-linuxkit",
+                    "version": "#1 SMP Thu Oct 17 19:31:58 UTC 2019",
+                    "platform": "x86_64"
+                },
+                "is_linux": "1",
+                "is_apple": "0",
+                "is_windows": "0",
+                "hostname": "aa935533a916",
+                "domain_fqname": "aa935533a916",
+                "is_64bits": "1",
+                "proc": {
+                    "vendor_name": "GenuineIntel",
+                    "vendor_id": "Intel Corporation",
+                    "type_id": "0",
+                    "family_id": "6",
+                    "model_id": "94",
+                    "extended_name": "Unknown P6 family",
+                    "stepping_code": "3",
+                    "serial_number": "",
+                    "cache_size": "6144",
+                    "logical_per_physical": "2",
+                    "clock_frequency": "2592.000000",
+                    "logical_cpu_number": "4",
+                    "physical_cpu_number": "2",
+                    "cpu_id_support": "0",
+                    "apic_id": "0"
+                },
+                "mem": {
+                    "total": {
+                        "virtual": "1023",
+                        "physical": "1988",
+                        "host": "2036656"
+                    },
+                    "available": {
+                        "virtual": "832",
+                        "physical": "1824",
+                        "host": "2036656",
+                        "proc": "2036656"
+                    },
+                    "used": {
+                        "checkpoint-1": {
+                            "host": "268940",
+                            "proc": "84724"
+                        },
+                        "checkpoint-2": {
+                            "host": "317272",
+                            "proc": "149268"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "FunctionSpace": {
+        "object-2": {
+            "nSpace": "1",
+            "mesh": "Mesh.object-0",
+            "basis": {
+                "name": "lagrange",
+                "order": "1",
+                "is_continuous": "true",
+                "nComponents": "1",
+                "nComponents1": "1",
+                "nComponents2": "1",
+                "shape": "scalar"
+            },
+            "doftable": {
+                "nDof": "1188"
+            }
+        },
+        "object-1": {
+            "nSpace": "1",
+            "mesh": "Mesh.object-0",
+            "basis": {
+                "name": "lagrange",
+                "order": "0",
+                "is_continuous": "false",
+                "nComponents": "1",
+                "nComponents1": "1",
+                "nComponents2": "1",
+                "shape": "scalar"
+            },
+            "doftable": {
+                "nDof": "2239"
+            }
+        },
+        "object-0": {
+            "nSpace": "1",
+            "mesh": "Mesh.object-0",
+            "basis": {
+                "name": "lagrange",
+                "order": "2",
+                "is_continuous": "true",
+                "nComponents": "1",
+                "nComponents1": "1",
+                "nComponents2": "1",
+                "shape": "scalar"
+            },
+            "doftable": {
+                "nDof": "4614"
+            }
+        }
+    },
+    "Checker": {
+        "L1\/H1 convergence": {
+            "H1": "4.0689152977722269",
+            "L2": "0.58485835001221564"
+        }
+    },
+    "Mesh": {
+        "object-0": {
+            "shape": "Simplex_2_1_2",
+            "dim": "2",
+            "order": "1",
+            "real_dim": "2",
+            "h_min": "0.041589126274746618",
+            "h_max": "0.063188213870913154",
+            "h_average": "0.050279316866705608",
+            "n_points": "1188",
+            "n_faces": "3426",
+            "n_elements": "2239",
+            "n_partition": "1"
+        }
+    },
+    "TimerTable": {
+        "timer-40": {
+            "message": "Backend::newMatrix:: build stencil",
+            "count": "1",
+            "total": "0.024263702000000002",
+            "max": "0.024263702000000002",
+            "min": "0.024263702000000002",
+            "mean": "0.024263702000000002",
+            "std_dev": "0"
+        },
+        "timer-41": {
+            "message": "Backend::newMatrix:: initialize matrix",
+            "count": "1",
+            "total": "0.0022445",
+            "max": "0.0022445",
+            "min": "0.0022445",
+            "mean": "0.0022445",
+            "std_dev": "0"
+        },
+        "timer-42": {
+            "message": "Backend::newMatrix:: zero out matrix + set split",
+            "count": "1",
+            "total": "7.86e-05",
+            "max": "7.86e-05",
+            "min": "7.86e-05",
+            "mean": "7.86e-05",
+            "std_dev": "0"
+        },
+        "timer-23": {
+            "message": "DofTable buildDofMap allocation",
+            "count": "3",
+            "total": "5.9999999999999997e-07",
+            "max": "1.9999999999999999e-07",
+            "min": "1.9999999999999999e-07",
+            "mean": "1.9999999999999999e-07",
+            "std_dev": "0"
+        },
+        "timer-25": {
+            "message": "DofTable buildDofMap dof generation",
+            "count": "3",
+            "total": "0.028743300999999999",
+            "max": "0.018633700999999999",
+            "min": "0.0011291000000000001",
+            "mean": "0.0095811003333333335",
+            "std_dev": "0.007158831590541404"
+        },
+        "timer-27": {
+            "message": "DofTable buildDofMap done",
+            "count": "3",
+            "total": "9.6899999999999984e-05",
+            "max": "9.1799999999999995e-05",
+            "min": "1.9999999999999999e-06",
+            "mean": "3.2299999999999992e-05",
+            "std_dev": "4.207525004877174e-05"
+        },
+        "timer-24": {
+            "message": "DofTable buildDofMap element loop",
+            "count": "3",
+            "total": "0.027985000999999999",
+            "max": "0.018202401",
+            "min": "0.00096809999999999995",
+            "mean": "0.0093283336666666657",
+            "std_dev": "0.0070452490619518594"
+        },
+        "timer-26": {
+            "message": "DofTable generateDofPoints",
+            "count": "3",
+            "total": "2.3999999999999999e-06",
+            "max": "1.1000000000000001e-06",
+            "min": "4.9999999999999998e-07",
+            "mean": "7.9999999999999996e-07",
+            "std_dev": "2.4494897427831784e-07"
+        },
+        "timer-35": {
+            "message": "DofTable::build",
+            "count": "3",
+            "total": "0.037661003999999998",
+            "max": "0.023336202",
+            "min": "0.00064270099999999997",
+            "mean": "0.012553667999999999",
+            "std_dev": "0.0092988804948361745"
+        },
+        "timer-34": {
+            "message": "DofTable::build - locglob indices",
+            "count": "3",
+            "total": "0.002828101",
+            "max": "0.0014479",
+            "min": "0.00056750099999999999",
+            "mean": "0.00094270033333333336",
+            "std_dev": "0.00037099026474229154"
+        },
+        "timer-30": {
+            "message": "DofTable::buildBoundaryDofMap",
+            "count": "2",
+            "total": "0.0068108019999999995",
+            "max": "0.0037728010000000001",
+            "min": "0.0030380009999999998",
+            "mean": "0.0034054009999999997",
+            "std_dev": "0.00036740000000000037"
+        },
+        "timer-22": {
+            "message": "DofTable::buildLocalDiscon",
+            "count": "3",
+            "total": "5.9999999999999997e-07",
+            "max": "1.9999999999999999e-07",
+            "min": "1.9999999999999999e-07",
+            "mean": "1.9999999999999999e-07",
+            "std_dev": "0"
+        },
+        "timer-21": {
+            "message": "DofTable::buildPeriodicDof",
+            "count": "3",
+            "total": "1.1000000000000001e-06",
+            "max": "4.9999999999999998e-07",
+            "min": "2.9999999999999999e-07",
+            "mean": "3.6666666666666667e-07",
+            "std_dev": "9.4280904158206344e-08"
+        },
+        "timer-28": {
+            "message": "DofTable::call buildDofMap",
+            "count": "3",
+            "total": "0.028878200999999999",
+            "max": "0.018655400999999999",
+            "min": "0.0012306000000000001",
+            "mean": "0.0096260670000000003",
+            "std_dev": "0.0071277515390042881"
+        },
+        "timer-29": {
+            "message": "DofTable::checki dof element assignement",
+            "count": "3",
+            "total": "6.0999999999999992e-06",
+            "max": "2.0999999999999998e-06",
+            "min": "1.9e-06",
+            "mean": "2.0333333333333331e-06",
+            "std_dev": "9.4280904158206278e-08"
+        },
+        "timer-20": {
+            "message": "DofTable::init",
+            "count": "3",
+            "total": "0.0023854000000000002",
+            "max": "0.0012254",
+            "min": "0.00057359999999999996",
+            "mean": "0.00079513333333333343",
+            "std_dev": "0.00030428935060052454"
+        },
+        "timer-31": {
+            "message": "DofTable::multi process",
+            "count": "3",
+            "total": "3.7000000000000002e-06",
+            "max": "1.7999999999999999e-06",
+            "min": "4.9999999999999998e-07",
+            "mean": "1.2333333333333333e-06",
+            "std_dev": "5.4365021434333634e-07"
+        },
+        "timer-33": {
+            "message": "DofTable::reordering global id in doftable",
+            "count": "3",
+            "total": "1.27e-05",
+            "max": "9.7000000000000003e-06",
+            "min": "1.1999999999999999e-06",
+            "mean": "4.2333333333333332e-06",
+            "std_dev": "3.8732702232380102e-06"
+        },
+        "timer-32": {
+            "message": "DofTable::sequential map",
+            "count": "3",
+            "total": "1.03e-05",
+            "max": "6.2999999999999998e-06",
+            "min": "1.5999999999999999e-06",
+            "mean": "3.4333333333333332e-06",
+            "std_dev": "2.0531818125912656e-06"
+        },
+        "timer-72": {
+            "message": "Exporter",
+            "count": "1",
+            "total": "0.663615756",
+            "max": "0.663615756",
+            "min": "0.663615756",
+            "mean": "0.663615756",
+            "std_dev": "0"
+        },
+        "timer-71": {
+            "message": "ExporterEnsightGold::save",
+            "count": "1",
+            "total": "0.57918424999999996",
+            "max": "0.57918424999999996",
+            "min": "0.57918424999999996",
+            "mean": "0.57918424999999996",
+            "std_dev": "0"
+        },
+        "timer-69": {
+            "message": "ExporterEnsightGold::save case",
+            "count": "1",
+            "total": "0.018988801999999999",
+            "max": "0.018988801999999999",
+            "min": "0.018988801999999999",
+            "mean": "0.018988801999999999",
+            "std_dev": "0"
+        },
+        "timer-62": {
+            "message": "ExporterEnsightGold::save geo",
+            "count": "1",
+            "total": "0.069609106000000004",
+            "max": "0.069609106000000004",
+            "min": "0.069609106000000004",
+            "mean": "0.069609106000000004",
+            "std_dev": "0"
+        },
+        "timer-70": {
+            "message": "ExporterEnsightGold::save sos",
+            "count": "1",
+            "total": "0.015030801",
+            "max": "0.015030801",
+            "min": "0.015030801",
+            "mean": "0.015030801",
+            "std_dev": "0"
+        },
+        "timer-68": {
+            "message": "ExporterEnsightGold::save variables",
+            "count": "1",
+            "total": "0.47549774099999997",
+            "max": "0.47549774099999997",
+            "min": "0.47549774099999997",
+            "mean": "0.47549774099999997",
+            "std_dev": "0"
+        },
+        "timer-61": {
+            "message": "ExporterEnsightGold::writeGeoFiles init cache",
+            "count": "1",
+            "total": "0.001578601",
+            "max": "0.001578601",
+            "min": "0.001578601",
+            "mean": "0.001578601",
+            "std_dev": "0"
+        },
+        "timer-37": {
+            "message": "FunctionSpace dof table",
+            "count": "3",
+            "total": "0.041335403999999999",
+            "max": "0.024585302",
+            "min": "0.0024854009999999999",
+            "mean": "0.013778468",
+            "std_dev": "0.0090287955250656048"
+        },
+        "timer-16": {
+            "message": "FunctionSpace dof-1",
+            "count": "3",
+            "total": "2.7499999999999998e-05",
+            "max": "1.04e-05",
+            "min": "8.3000000000000002e-06",
+            "mean": "9.1666666666666664e-06",
+            "std_dev": "8.9566858950295952e-07"
+        },
+        "timer-17": {
+            "message": "FunctionSpace dof-2",
+            "count": "3",
+            "total": "2.9999999999999999e-07",
+            "max": "9.9999999999999995e-08",
+            "min": "9.9999999999999995e-08",
+            "mean": "9.9999999999999995e-08",
+            "std_dev": "0"
+        },
+        "timer-18": {
+            "message": "FunctionSpace dof-3",
+            "count": "3",
+            "total": "9.9999999999999995e-07",
+            "max": "3.9999999999999998e-07",
+            "min": "2.9999999999999999e-07",
+            "mean": "3.333333333333333e-07",
+            "std_dev": "4.7140452079103159e-08"
+        },
+        "timer-19": {
+            "message": "FunctionSpace dof-4",
+            "count": "3",
+            "total": "1.8999999999999998e-06",
+            "max": "7.9999999999999996e-07",
+            "min": "4.9999999999999998e-07",
+            "mean": "6.3333333333333323e-07",
+            "std_dev": "1.2472191289246475e-07"
+        },
+        "timer-36": {
+            "message": "FunctionSpace dof-5",
+            "count": "3",
+            "total": "0.040739904",
+            "max": "0.024583002",
+            "min": "0.0018935009999999999",
+            "mean": "0.013579968",
+            "std_dev": "0.0092755475815489187"
+        },
+        "timer-74": {
+            "message": "H1 error norm",
+            "count": "1",
+            "total": "0.31120672700000002",
+            "max": "0.31120672700000002",
+            "min": "0.31120672700000002",
+            "mean": "0.31120672700000002",
+            "std_dev": "0"
+        },
+        "timer-73": {
+            "message": "L2 error norm",
+            "count": "1",
+            "total": "0.012137501",
+            "max": "0.012137501",
+            "min": "0.012137501",
+            "mean": "0.012137501",
+            "std_dev": "0"
+        },
+        "timer-45": {
+            "message": "MatrixPETSc::close",
+            "count": "3",
+            "total": "0.0003078",
+            "max": "0.0001094",
+            "min": "9.7800000000000006e-05",
+            "mean": "0.0001026",
+            "std_dev": "4.9423341314268338e-06"
+        },
+        "timer-1": {
+            "message": "Mesh.updateEntitiesCoDimensionOne.add_faces",
+            "count": "1",
+            "total": "0.00018139999999999999",
+            "max": "0.00018139999999999999",
+            "min": "0.00018139999999999999",
+            "mean": "0.00018139999999999999",
+            "std_dev": "0"
+        },
+        "timer-2": {
+            "message": "Mesh.updateEntitiesCoDimensionOne.add_faces_from_elements",
+            "count": "1",
+            "total": "0.0075025999999999999",
+            "max": "0.0075025999999999999",
+            "min": "0.0075025999999999999",
+            "mean": "0.0075025999999999999",
+            "std_dev": "0"
+        },
+        "timer-3": {
+            "message": "Mesh.updateEntitiesCoDimensionOne.clean_faces",
+            "count": "1",
+            "total": "0.0002151",
+            "max": "0.0002151",
+            "min": "0.0002151",
+            "mean": "0.0002151",
+            "std_dev": "0"
+        },
+        "timer-12": {
+            "message": "Mesh::updateForUse check",
+            "count": "1",
+            "total": "3.9999999999999998e-07",
+            "max": "3.9999999999999998e-07",
+            "min": "3.9999999999999998e-07",
+            "mean": "3.9999999999999998e-07",
+            "std_dev": "0"
+        },
+        "timer-7": {
+            "message": "Mesh::updateForUse register elements associated to marked points",
+            "count": "1",
+            "total": "0.0001047",
+            "max": "0.0001047",
+            "min": "0.0001047",
+            "mean": "0.0001047",
+            "std_dev": "0"
+        },
+        "timer-4": {
+            "message": "Mesh::updateForUse update entities of codimension 1",
+            "count": "1",
+            "total": "0.0095470009999999994",
+            "max": "0.0095470009999999994",
+            "min": "0.0095470009999999994",
+            "mean": "0.0095470009999999994",
+            "std_dev": "0"
+        },
+        "timer-5": {
+            "message": "Mesh::updateForUse update entities of codimension 2",
+            "count": "1",
+            "total": "3.9999999999999998e-07",
+            "max": "3.9999999999999998e-07",
+            "min": "3.9999999999999998e-07",
+            "mean": "3.9999999999999998e-07",
+            "std_dev": "0"
+        },
+        "timer-13": {
+            "message": "Mesh::updateForUse update geomap cache",
+            "count": "1",
+            "total": "2.9999999999999999e-07",
+            "max": "2.9999999999999999e-07",
+            "min": "2.9999999999999999e-07",
+            "mean": "2.9999999999999999e-07",
+            "std_dev": "0"
+        },
+        "timer-11": {
+            "message": "Mesh::updateForUse update mesh measures",
+            "count": "1",
+            "total": "0.0093716000000000008",
+            "max": "0.0093716000000000008",
+            "min": "0.0093716000000000008",
+            "mean": "0.0093716000000000008",
+            "std_dev": "0"
+        },
+        "timer-6": {
+            "message": "Mesh::updateForUse update on boundary",
+            "count": "1",
+            "total": "0.0011186",
+            "max": "0.0011186",
+            "min": "0.0011186",
+            "mean": "0.0011186",
+            "std_dev": "0"
+        },
+        "timer-8": {
+            "message": "Mesh::updateForUse update setMesh in elements and faces",
+            "count": "1",
+            "total": "8.4800000000000001e-05",
+            "max": "8.4800000000000001e-05",
+            "min": "8.4800000000000001e-05",
+            "mean": "8.4800000000000001e-05",
+            "std_dev": "0"
+        },
+        "timer-55": {
+            "message": "Timeset::add expression f",
+            "count": "1",
+            "total": "0.010309100999999999",
+            "max": "0.010309100999999999",
+            "min": "0.010309100999999999",
+            "mean": "0.010309100999999999",
+            "std_dev": "0"
+        },
+        "timer-60": {
+            "message": "Timeset::add expression flux",
+            "count": "1",
+            "total": "0.011948401000000001",
+            "max": "0.011948401000000001",
+            "min": "0.011948401000000001",
+            "mean": "0.011948401000000001",
+            "std_dev": "0"
+        },
+        "timer-56": {
+            "message": "Timeset::add expression g",
+            "count": "1",
+            "total": "0.0044453000000000001",
+            "max": "0.0044453000000000001",
+            "min": "0.0044453000000000001",
+            "mean": "0.0044453000000000001",
+            "std_dev": "0"
+        },
+        "timer-54": {
+            "message": "Timeset::add expression k",
+            "count": "1",
+            "total": "0.0027566999999999999",
+            "max": "0.0027566999999999999",
+            "min": "0.0027566999999999999",
+            "mean": "0.0027566999999999999",
+            "std_dev": "0"
+        },
+        "timer-57": {
+            "message": "Timeset::add expression r_1",
+            "count": "1",
+            "total": "0.002107201",
+            "max": "0.002107201",
+            "min": "0.002107201",
+            "mean": "0.002107201",
+            "std_dev": "0"
+        },
+        "timer-58": {
+            "message": "Timeset::add expression r_2",
+            "count": "1",
+            "total": "0.0064456000000000001",
+            "max": "0.0064456000000000001",
+            "min": "0.0064456000000000001",
+            "mean": "0.0064456000000000001",
+            "std_dev": "0"
+        },
+        "timer-59": {
+            "message": "Timeset::add expression solution",
+            "count": "1",
+            "total": "0.0035936000000000002",
+            "max": "0.0035936000000000002",
+            "min": "0.0035936000000000002",
+            "mean": "0.0035936000000000002",
+            "std_dev": "0"
+        },
+        "timer-53": {
+            "message": "Timeset::add expression u",
+            "count": "1",
+            "total": "0.020358302000000002",
+            "max": "0.020358302000000002",
+            "min": "0.020358302000000002",
+            "mean": "0.020358302000000002",
+            "std_dev": "0"
+        },
+        "timer-52": {
+            "message": "Timeset::add functionspace element p",
+            "count": "1",
+            "total": "0.0022496999999999999",
+            "max": "0.0022496999999999999",
+            "min": "0.0022496999999999999",
+            "mean": "0.0022496999999999999",
+            "std_dev": "0"
+        },
+        "timer-50": {
+            "message": "Timeset::add functionspace element pid",
+            "count": "1",
+            "total": "2.5000000000000001e-05",
+            "max": "2.5000000000000001e-05",
+            "min": "2.5000000000000001e-05",
+            "mean": "2.5000000000000001e-05",
+            "std_dev": "0"
+        },
+        "timer-49": {
+            "message": "Timeset::add get scalar space element",
+            "count": "1",
+            "total": "1.0900000000000001e-05",
+            "max": "1.0900000000000001e-05",
+            "min": "1.0900000000000001e-05",
+            "mean": "1.0900000000000001e-05",
+            "std_dev": "0"
+        },
+        "timer-51": {
+            "message": "Timeset::add get scalar space nodal",
+            "count": "1",
+            "total": "0.014372001000000001",
+            "max": "0.014372001000000001",
+            "min": "0.014372001000000001",
+            "mean": "0.014372001000000001",
+            "std_dev": "0"
+        },
+        "timer-38": {
+            "message": "Vh elements",
+            "count": "1",
+            "total": "0.0085670009999999994",
+            "max": "0.0085670009999999994",
+            "min": "0.0085670009999999994",
+            "mean": "0.0085670009999999994",
+            "std_dev": "0"
+        },
+        "timer-14": {
+            "message": "[Mesh::updateForUse] total time",
+            "count": "1",
+            "total": "0.020635301000000002",
+            "max": "0.020635301000000002",
+            "min": "0.020635301000000002",
+            "mean": "0.020635301000000002",
+            "std_dev": "0"
+        },
+        "timer-10": {
+            "message": "[Mesh::updateMeasures] update average, min and max",
+            "count": "1",
+            "total": "0.0021416",
+            "max": "0.0021416",
+            "min": "0.0021416",
+            "mean": "0.0021416",
+            "std_dev": "0"
+        },
+        "timer-9": {
+            "message": "[Mesh::updateMeasures] update entity measures",
+            "count": "1",
+            "total": "0.0071501000000000004",
+            "max": "0.0071501000000000004",
+            "min": "0.0071501000000000004",
+            "mean": "0.0071501000000000004",
+            "std_dev": "0"
+        },
+        "timer-47": {
+            "message": "a",
+            "count": "1",
+            "total": "0.066223305999999996",
+            "max": "0.066223305999999996",
+            "min": "0.066223305999999996",
+            "mean": "0.066223305999999996",
+            "std_dev": "0"
+        },
+        "timer-46": {
+            "message": "a.dirichlet",
+            "count": "1",
+            "total": "0.0020470000000000002",
+            "max": "0.0020470000000000002",
+            "min": "0.0020470000000000002",
+            "mean": "0.0020470000000000002",
+            "std_dev": "0"
+        },
+        "timer-43": {
+            "message": "a.gradgrad",
+            "count": "1",
+            "total": "0.034610503000000001",
+            "max": "0.034610503000000001",
+            "min": "0.034610503000000001",
+            "mean": "0.034610503000000001",
+            "std_dev": "0"
+        },
+        "timer-44": {
+            "message": "a.robin",
+            "count": "1",
+            "total": "0.0026932010000000001",
+            "max": "0.0026932010000000001",
+            "min": "0.0026932010000000001",
+            "mean": "0.0026932010000000001",
+            "std_dev": "0"
+        },
+        "timer-48": {
+            "message": "a.solve",
+            "count": "1",
+            "total": "0.053430103999999999",
+            "max": "0.053430103999999999",
+            "min": "0.053430103999999999",
+            "mean": "0.053430103999999999",
+            "std_dev": "0"
+        },
+        "timer-75": {
+            "message": "env",
+            "count": "1",
+            "total": "3.3261176840000002",
+            "max": "3.3261176840000002",
+            "min": "3.3261176840000002",
+            "mean": "3.3261176840000002",
+            "std_dev": "0"
+        },
+        "timer-39": {
+            "message": "l",
+            "count": "1",
+            "total": "0.034696802999999998",
+            "max": "0.034696802999999998",
+            "min": "0.034696802999999998",
+            "mean": "0.034696802999999998",
+            "std_dev": "0"
+        },
+        "timer-15": {
+            "message": "loadMesh",
+            "count": "1",
+            "total": "0.169444714",
+            "max": "0.169444714",
+            "min": "0.169444714",
+            "mean": "0.169444714",
+            "std_dev": "0"
+        },
+        "timer-0": {
+            "message": "read msh from file",
+            "count": "1",
+            "total": "0.015246401999999999",
+            "max": "0.015246401999999999",
+            "min": "0.015246401999999999",
+            "mean": "0.015246401999999999",
+            "std_dev": "0"
+        },
+        "timer-67": {
+            "message": "saveFields",
+            "count": "2",
+            "total": "0.475440641",
+            "max": "0.37776043300000001",
+            "min": "0.097680208000000004",
+            "mean": "0.2377203205",
+            "std_dev": "0.14004011249999998"
+        },
+        "timer-65": {
+            "message": "saveFields element loop",
+            "count": "10",
+            "total": "0.0028056019999999999",
+            "max": "0.001293401",
+            "min": "7.6299999999999998e-05",
+            "mean": "0.00028056019999999997",
+            "std_dev": "0.00035552790221888355"
+        },
+        "timer-63": {
+            "message": "saveFields intro",
+            "count": "10",
+            "total": "0.429219236",
+            "max": "0.053336203999999998",
+            "min": "0.033111003",
+            "mean": "0.042921923600000002",
+            "std_dev": "0.0059669393697687444"
+        },
+        "timer-64": {
+            "message": "saveFields part",
+            "count": "10",
+            "total": "0.022220800999999998",
+            "max": "0.0030435000000000002",
+            "min": "0.0017546",
+            "mean": "0.0022220801",
+            "std_dev": "0.00037249863895602359"
+        },
+        "timer-66": {
+            "message": "saveFields write part",
+            "count": "10",
+            "total": "0.017950101999999999",
+            "max": "0.0032177999999999998",
+            "min": "0.00079120099999999995",
+            "mean": "0.0017950101999999999",
+            "std_dev": "0.00086332266389581129"
+        }
+    }
+}

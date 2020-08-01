@@ -1,0 +1,28 @@
+Pour lancer Docker
+WIN: 	docker run --rm --name tp_edp -it -v $HOME/Dropbox/Unistra/SOURCE_CODE/edp1/tp0:/feel feelpp/feelpp
+LINUX:	docker run --rm -it -v $HOME/csmi:/feel feelpp/feelpp 
+
+Pour executer une commande en tant qu'admin
+	docker exec -u 0 -it tp_edp bash
+
+Pour retourner au bash
+	CTRL+P followed by CTRL+Q
+
+Commandes pour les permissions
+LINUX:	$HOME/csmi; chmod -R a+w csmi
+
+Creer la geometrie avec Gmsh
+	gmsh -2 -o triangle.msh /usr/share/feelpp/data/testcases/quickstart/laplacian/triangle/triangle.geo 
+
+Creer un probleme dans Feel++
+	feelpp_qs_laplacian_2d --config-file /usr/share/feelpp/data/testcases/quickstart/laplacian/triangle/triangle.cfg
+
+Forcer une solution particuliere
+	feelpp_qs_laplacian_2d --config-file /usr/share/feelpp/data/testcases/quickstart/laplacian/triangle/triangle.cfg --gmsh.hsize=0.05 --checker.solution="x*x+cos(y)*y:x:y"
+
+Executer sur 4 processeurs
+	mpirun -np 4 feelpp_qs_laplacian_2d --config-file /usr/share/feelpp/data/testcases/quickstart/laplacian/triangle/triangle.cfg --gmsh.hsize=0.05 --checker.solution="x*x+cos(y)*y:x:y"
+
+En changeant les conditions au bord
+	mpirun -np 4 feelpp_qs_laplacian_2d --config-file /usr/share/feelpp/data/testcases/quickstart/laplacian/triangle/triangle.cfg --gmsh.hsize=0.025 --checker.solution="x*x+cos(y)*y:x:y" --checker.check=false --f="sin(x)*cos(y):x:y" --g=0 --un=0 --r_2=0
+

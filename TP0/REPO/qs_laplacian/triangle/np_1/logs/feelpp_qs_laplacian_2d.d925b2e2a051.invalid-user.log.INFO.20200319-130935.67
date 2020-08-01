@@ -1,0 +1,33 @@
+Log file created at: 2020/03/19 13:09:35
+Running on machine: d925b2e2a051
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0319 13:09:35.107193    67 environment.cpp:1601] File /feel/tp1/triangle.geo found
+I0319 13:09:35.169778    67 environment.cpp:1601] File /feel/tp1/triangle.geo found
+I0319 13:09:35.178308    67 gmsh.cpp:462] Generate mesh on processor 0/1
+I0319 13:09:35.178414    67 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ElementOrder not found ! 
+I0319 13:09:35.178606    67 gmsh.cpp:388] [Gmsh::generateGeo] Parameter hsize  = (?1$1) = 0.1; now ! (overwrite geo param h !)
+I0319 13:09:35.185097    67 gmsh.cpp:432] "triangle.geo" exists but is different from the expected geometry, we overwrite it now
+I0319 13:09:35.201705    67 gmsh.cpp:479] Mesh file triangle.msh generated from geometry triangle.geo
+I0319 13:09:35.201726    67 gmsh.cpp:480]  - does mesh file name exists : true
+I0319 13:09:35.208293    67 gmsh.cpp:485] Generating triangle.msh...
+I0319 13:09:35.208328    67 gmsh.cpp:660] [Gmsh::generate] env.part: 1
+I0319 13:09:35.208338    67 gmsh.cpp:661] [Gmsh::generate] partitions: 1
+I0319 13:09:35.208343    67 gmsh.cpp:662] [Gmsh::generate] partitioner: 1
+I0319 13:09:35.272455    67 gmsh.cpp:752] Writing GMSH file triangle.msh in ascii format
+I0319 13:09:35.297482    67 gmsh.cpp:489] Generating triangle.msh done.
+I0319 13:09:35.314005    67 gmsh.cpp:501] Broadcast mesh file triangle.msh to all other mpi processes, (created: 1)
+I0319 13:09:35.314098    67 importergmsh.hpp:992] Reading Msh file triangle.msh
+I0319 13:09:35.324730    67 importergmsh.hpp:1015] GMSH mesh file version : 4.1 format: ascii size of double: 8
+I0319 13:09:35.329239    67 meshimpl.hpp:1096] We have 20 faces in the database
+I0319 13:09:35.330884    67 meshimpl.hpp:1370] We have now 768 faces in the mesh
+I0319 13:09:35.331112    67 meshimpl.hpp:1908] update boundary points...
+I0319 13:09:35.331141    67 meshimpl.hpp:1928] update boundary elements...
+I0319 13:09:35.337970    67 meshimpl.hpp:569] h average : 0.101603
+I0319 13:09:35.337990    67 meshimpl.hpp:570]     h min : 0.0784425
+I0319 13:09:35.337996    67 meshimpl.hpp:571]     h max : 0.126309
+I0319 13:09:35.349741    67 environment.cpp:2390] Environment::clearSomeMemory before: PETSC get current memory usage (resident memory): 94912.5  KBytes 94.9125  MBytes 0.0949125 GBytes
+I0319 13:09:35.349784    67 environment.cpp:2395] Environment::clearSomeMemory before: PETSC get current PETSC Malloc usage: 0  KBytes 0 MBytes 0 GBytes
+I0319 13:09:35.349802    67 environment.cpp:2397] Environment::clearSomeMemory before: PETSC get maximum PETSC Malloc usage(largest memory ever used so far): 0  KBytes 0 MBytes 0 GBytes
+I0319 13:09:35.352306    67 environment.cpp:2390] Environment::clearSomeMemory after: PETSC get current memory usage (resident memory): 94912.5  KBytes 94.9125  MBytes 0.0949125 GBytes
+I0319 13:09:35.352337    67 environment.cpp:2395] Environment::clearSomeMemory after: PETSC get current PETSC Malloc usage: 0  KBytes 0 MBytes 0 GBytes
+I0319 13:09:35.352347    67 environment.cpp:2397] Environment::clearSomeMemory after: PETSC get maximum PETSC Malloc usage(largest memory ever used so far): 0  KBytes 0 MBytes 0 GBytes

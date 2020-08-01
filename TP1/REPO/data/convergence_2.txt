@@ -1,0 +1,29 @@
+feelpp_qs_laplacian_2d --config-file=triangle.cfg --checker.check=true --checker.solution="((x*x+y*y)^(1/6))*sin((2/3)*atan(y/x)):x:y" --gmsh.hsize=0.05 --gmsh.filename="$cfgdir/omega_2.geo"
+
+h=0.8
+[no checks]||u-u_h||_H1=0.0554432
+[no checks]||u-u_h||_L2=0.003245
+
+h=0.4
+[no checks]||u-u_h||_H1=0.0419687
+[no checks]||u-u_h||_L2=0.00161767
+
+h=0.2
+[no checks]||u-u_h||_H1=0.0299582
+[no checks]||u-u_h||_L2=0.000694408
+
+h=0.1
+[no checks]||u-u_h||_H1=0.0188573
+[no checks]||u-u_h||_L2=0.000218771
+
+h=0.05
+[no checks]||u-u_h||_H1=0.0118874
+[no checks]||u-u_h||_L2=6.89007e-05
+
+h=0.025
+[no checks]||u-u_h||_H1=0.00745044
+[no checks]||u-u_h||_L2=2.15019e-05
+
+h=0.125
+[no checks]||u-u_h||_H1=0.00470019
+[no checks]||u-u_h||_L2=6.795e-06

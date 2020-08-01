@@ -1,0 +1,47 @@
+Log file created at: 2020/03/24 21:09:43
+Running on machine: aa935533a916
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0324 21:09:43.093598   153 environment.cpp:1601] File /feel/omega.geo found
+I0324 21:09:43.125041   153 environment.cpp:1601] File /feel/omega.geo found
+I0324 21:09:43.126135   153 gmsh.cpp:462] Generate mesh on processor 0/1
+I0324 21:09:43.126240   153 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ElementOrder not found ! 
+I0324 21:09:43.126356   153 gmsh.cpp:388] [Gmsh::generateGeo] Parameter hsize  = (?1$1) = 0.05; now ! (overwrite geo param h !)
+I0324 21:09:43.128566   153 gmsh.cpp:440] "omega.geo" exists and its content correspond to the expected geometry
+I0324 21:09:43.128587   153 gmsh.cpp:479] Mesh file omega.msh generated from geometry omega.geo
+I0324 21:09:43.128593   153 gmsh.cpp:480]  - does mesh file name exists : true
+I0324 21:09:43.129922   153 gmsh.cpp:485] Generating omega.msh...
+I0324 21:09:43.130012   153 gmsh.cpp:660] [Gmsh::generate] env.part: 1
+I0324 21:09:43.130020   153 gmsh.cpp:661] [Gmsh::generate] partitions: 1
+I0324 21:09:43.130024   153 gmsh.cpp:662] [Gmsh::generate] partitioner: 1
+I0324 21:09:43.237195   153 gmsh.cpp:752] Writing GMSH file omega.msh in ascii format
+I0324 21:09:43.280081   153 gmsh.cpp:489] Generating omega.msh done.
+I0324 21:09:43.287053   153 gmsh.cpp:501] Broadcast mesh file omega.msh to all other mpi processes, (created: 1)
+I0324 21:09:43.287158   153 importergmsh.hpp:992] Reading Msh file omega.msh
+I0324 21:09:43.290323   153 importergmsh.hpp:1015] GMSH mesh file version : 4.1 format: ascii size of double: 8
+I0324 21:09:43.307219   153 meshimpl.hpp:1096] We have 127 faces in the database
+I0324 21:09:43.315933   153 meshimpl.hpp:1370] We have now 4628 faces in the mesh
+I0324 21:09:43.318048   153 meshimpl.hpp:1908] update boundary points...
+I0324 21:09:43.318213   153 meshimpl.hpp:1928] update boundary elements...
+I0324 21:09:43.327968   153 meshimpl.hpp:569] h average : 0.0498198
+I0324 21:09:43.327989   153 meshimpl.hpp:570]     h min : 0.036768
+I0324 21:09:43.327993   153 meshimpl.hpp:571]     h max : 0.0636353
+I0324 21:09:43.942454   153 ginac.cpp:149] Parsing // Not supported in C:
+// sint
+x*sint(x) + y*cos(y):x:y using GiNaC
+I0324 21:09:43.942500   153 ginac.cpp:171]  . Number of symbols 3
+I0324 21:09:43.942505   153 ginac.cpp:172]  . symbols : (
+// sint
+x*sint(x) + y*cos(y),x,y)
+I0324 21:09:43.942512   153 ginac.cpp:173]  . Number of params 0
+I0324 21:09:43.942515   153 ginac.cpp:174]  . symbols : ()
+I0324 21:09:43.942518   153 ginac.cpp:177] Inserting symbols in symbol table
+I0324 21:09:43.942529   153 ginac.cpp:197] Inserting params and in symbol table : (
+// sint
+x*sint(x) + y*cos(y),x,y)
+I0324 21:09:43.942533   153 ginac.cpp:208]  . table : (
+// sint
+x*sint(x) + y*cos(y), 
+// sint
+x*sint(x) + y*cos(y)) (x, x) (y, y)
+I0324 21:09:43.942564   153 ginac.cpp:211] Defining parser
+I0324 21:09:43.942605   153 ginac.cpp:214] parse expression: // Not supported in C

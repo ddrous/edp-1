@@ -1,0 +1,58 @@
+Log file created at: 2020/03/25 01:28:06
+Running on machine: aa935533a916
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0325 01:28:06.886818  1735 environment.cpp:1629]  looking for "/feel/feel/omega_2.geo"
+I0325 01:28:06.922117  1735 environment.cpp:1629]  looking for "/usr/share/feelpp/data/geo/feel/omega_2.geo"
+I0325 01:28:06.922155  1735 environment.cpp:1629]  looking for "/usr/share/feel/config/feel/omega_2.geo"
+I0325 01:28:06.922165  1735 environment.cpp:1629]  looking for "/feel/feel/omega_2.geo"
+I0325 01:28:06.925989  1735 environment.cpp:1667] File /feel/omega_2.geo not found
+W0325 01:28:06.926081  1735 loadmesh.hpp:120] Invalid filename /feel/omega_2.geo it should have either the .geo. .json or .msh extension
+W0325 01:28:06.950969  1735 loadmesh.hpp:274] File "hypercube" not found, generating instead an hypercube in 2D geometry and mesh...
+I0325 01:28:06.952317  1735 gmsh.cpp:462] Generate mesh on processor 0/1
+I0325 01:28:06.952422  1735 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ElementOrder not found ! 
+I0325 01:28:06.952528  1735 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter xmax=1.000000 now !
+I0325 01:28:06.952600  1735 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter xmin=0.000000 now !
+I0325 01:28:06.952672  1735 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ymax=1.000000 now !
+I0325 01:28:06.952733  1735 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ymin=0.000000 now !
+I0325 01:28:06.952795  1735 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter zmax not found ! 
+I0325 01:28:06.952849  1735 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter zmin not found ! 
+I0325 01:28:06.952913  1735 gmsh.cpp:388] [Gmsh::generateGeo] Parameter hsize  = (?1$1) = 0.8; now ! (overwrite geo param h !)
+I0325 01:28:06.956177  1735 gmsh.cpp:440] "hypercube.geo" exists and its content correspond to the expected geometry
+I0325 01:28:06.956202  1735 gmsh.cpp:479] Mesh file hypercube.msh generated from geometry hypercube.geo
+I0325 01:28:06.956209  1735 gmsh.cpp:480]  - does mesh file name exists : true
+I0325 01:28:06.976243  1735 gmsh.cpp:485] Generating hypercube.msh...
+I0325 01:28:06.976280  1735 gmsh.cpp:660] [Gmsh::generate] env.part: 1
+I0325 01:28:06.976290  1735 gmsh.cpp:661] [Gmsh::generate] partitions: 1
+I0325 01:28:06.976296  1735 gmsh.cpp:662] [Gmsh::generate] partitioner: 1
+I0325 01:28:06.982271  1735 gmsh.cpp:752] Writing GMSH file hypercube.msh in ascii format
+I0325 01:28:06.986564  1735 gmsh.cpp:489] Generating hypercube.msh done.
+I0325 01:28:06.990775  1735 gmsh.cpp:501] Broadcast mesh file hypercube.msh to all other mpi processes, (created: 1)
+I0325 01:28:06.990850  1735 importergmsh.hpp:992] Reading Msh file hypercube.msh
+I0325 01:28:06.993471  1735 importergmsh.hpp:1015] GMSH mesh file version : 4.1 format: ascii size of double: 8
+I0325 01:28:06.995939  1735 meshimpl.hpp:1096] We have 8 faces in the database
+I0325 01:28:06.996008  1735 meshimpl.hpp:1370] We have now 25 faces in the mesh
+I0325 01:28:06.996034  1735 meshimpl.hpp:1908] update boundary points...
+I0325 01:28:06.996043  1735 meshimpl.hpp:1928] update boundary elements...
+I0325 01:28:06.998284  1735 meshimpl.hpp:569] h average : 0.456077
+I0325 01:28:06.998306  1735 meshimpl.hpp:570]     h min : 0.380298
+I0325 01:28:06.998313  1735 meshimpl.hpp:571]     h max : 0.53033
+I0325 01:28:07.752594  1735 ginac.cpp:149] Parsing // Not supported in C:
+// pow
+pow(x**2 + y**2, -2)*sin(tan(x - y)):x:y using GiNaC
+I0325 01:28:07.752647  1735 ginac.cpp:171]  . Number of symbols 3
+I0325 01:28:07.752655  1735 ginac.cpp:172]  . symbols : (
+// pow
+pow(x**2 + y**2, -2)*sin(tan(x - y)),x,y)
+I0325 01:28:07.752669  1735 ginac.cpp:173]  . Number of params 0
+I0325 01:28:07.752676  1735 ginac.cpp:174]  . symbols : ()
+I0325 01:28:07.752684  1735 ginac.cpp:177] Inserting symbols in symbol table
+I0325 01:28:07.752696  1735 ginac.cpp:197] Inserting params and in symbol table : (
+// pow
+pow(x**2 + y**2, -2)*sin(tan(x - y)),x,y)
+I0325 01:28:07.752707  1735 ginac.cpp:208]  . table : (
+// pow
+pow(x**2 + y**2, -2)*sin(tan(x - y)), 
+// pow
+pow(x**2 + y**2, -2)*sin(tan(x - y))) (x, x) (y, y)
+I0325 01:28:07.752748  1735 ginac.cpp:211] Defining parser
+I0325 01:28:07.752792  1735 ginac.cpp:214] parse expression: // Not supported in C

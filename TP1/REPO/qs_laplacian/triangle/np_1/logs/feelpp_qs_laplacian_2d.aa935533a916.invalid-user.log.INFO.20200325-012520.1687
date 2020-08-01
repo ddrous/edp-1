@@ -1,0 +1,38 @@
+Log file created at: 2020/03/25 01:25:20
+Running on machine: aa935533a916
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0325 01:25:20.512955  1687 environment.cpp:1629]  looking for "/feel/feel/omega_2.geo"
+I0325 01:25:20.545421  1687 environment.cpp:1629]  looking for "/usr/share/feelpp/data/geo/feel/omega_2.geo"
+I0325 01:25:20.545490  1687 environment.cpp:1629]  looking for "/usr/share/feel/config/feel/omega_2.geo"
+I0325 01:25:20.545508  1687 environment.cpp:1629]  looking for "/feel/feel/omega_2.geo"
+I0325 01:25:20.550031  1687 environment.cpp:1667] File /feel/omega_2.geo not found
+W0325 01:25:20.550110  1687 loadmesh.hpp:120] Invalid filename /feel/omega_2.geo it should have either the .geo. .json or .msh extension
+W0325 01:25:20.575522  1687 loadmesh.hpp:274] File "hypercube" not found, generating instead an hypercube in 2D geometry and mesh...
+I0325 01:25:20.576683  1687 gmsh.cpp:462] Generate mesh on processor 0/1
+I0325 01:25:20.576767  1687 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ElementOrder not found ! 
+I0325 01:25:20.576845  1687 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter xmax=1.000000 now !
+I0325 01:25:20.576913  1687 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter xmin=0.000000 now !
+I0325 01:25:20.576972  1687 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ymax=1.000000 now !
+I0325 01:25:20.577023  1687 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ymin=0.000000 now !
+I0325 01:25:20.577075  1687 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter zmax not found ! 
+I0325 01:25:20.577154  1687 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter zmin not found ! 
+I0325 01:25:20.577214  1687 gmsh.cpp:388] [Gmsh::generateGeo] Parameter hsize  = (?1$1) = 0.8; now ! (overwrite geo param h !)
+I0325 01:25:20.578632  1687 gmsh.cpp:440] "hypercube.geo" exists and its content correspond to the expected geometry
+I0325 01:25:20.578645  1687 gmsh.cpp:479] Mesh file hypercube.msh generated from geometry hypercube.geo
+I0325 01:25:20.578649  1687 gmsh.cpp:480]  - does mesh file name exists : true
+I0325 01:25:20.579744  1687 gmsh.cpp:485] Generating hypercube.msh...
+I0325 01:25:20.579780  1687 gmsh.cpp:660] [Gmsh::generate] env.part: 1
+I0325 01:25:20.579788  1687 gmsh.cpp:661] [Gmsh::generate] partitions: 1
+I0325 01:25:20.579792  1687 gmsh.cpp:662] [Gmsh::generate] partitioner: 1
+I0325 01:25:20.588253  1687 gmsh.cpp:752] Writing GMSH file hypercube.msh in ascii format
+I0325 01:25:20.594310  1687 gmsh.cpp:489] Generating hypercube.msh done.
+I0325 01:25:20.596765  1687 gmsh.cpp:501] Broadcast mesh file hypercube.msh to all other mpi processes, (created: 1)
+I0325 01:25:20.596838  1687 importergmsh.hpp:992] Reading Msh file hypercube.msh
+I0325 01:25:20.600656  1687 importergmsh.hpp:1015] GMSH mesh file version : 4.1 format: ascii size of double: 8
+I0325 01:25:20.603001  1687 meshimpl.hpp:1096] We have 8 faces in the database
+I0325 01:25:20.603336  1687 meshimpl.hpp:1370] We have now 25 faces in the mesh
+I0325 01:25:20.603374  1687 meshimpl.hpp:1908] update boundary points...
+I0325 01:25:20.603417  1687 meshimpl.hpp:1928] update boundary elements...
+I0325 01:25:20.607710  1687 meshimpl.hpp:569] h average : 0.456077
+I0325 01:25:20.607733  1687 meshimpl.hpp:570]     h min : 0.380298
+I0325 01:25:20.607736  1687 meshimpl.hpp:571]     h max : 0.53033

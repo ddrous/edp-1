@@ -1,0 +1,44 @@
+Log file created at: 2020/03/19 13:10:07
+Running on machine: d925b2e2a051
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0319 13:10:07.065093    75 environment.cpp:1629]  looking for "/feel/tp1/untitled.geo"
+I0319 13:10:07.123443    75 environment.cpp:1629]  looking for "/usr/share/feelpp/data/geo/untitled.geo"
+I0319 13:10:07.124341    75 environment.cpp:1629]  looking for "/usr/share/feel/config/untitled.geo"
+I0319 13:10:07.124378    75 environment.cpp:1629]  looking for "/feel/tp1/untitled.geo"
+I0319 13:10:07.131069    75 environment.cpp:1667] File untitled.geo not found
+W0319 13:10:07.131126    75 loadmesh.hpp:120] Invalid filename untitled.geo it should have either the .geo. .json or .msh extension
+W0319 13:10:07.173372    75 loadmesh.hpp:274] File "hypercube" not found, generating instead an hypercube in 2D geometry and mesh...
+I0319 13:10:07.174496    75 gmsh.cpp:462] Generate mesh on processor 0/1
+I0319 13:10:07.174659    75 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ElementOrder not found ! 
+I0319 13:10:07.174746    75 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter xmax=1.000000 now !
+I0319 13:10:07.174816    75 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter xmin=0.000000 now !
+I0319 13:10:07.174863    75 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ymax=1.000000 now !
+I0319 13:10:07.174918    75 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ymin=0.000000 now !
+I0319 13:10:07.174970    75 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter zmax not found ! 
+I0319 13:10:07.175037    75 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter zmin not found ! 
+I0319 13:10:07.175113    75 gmsh.cpp:388] [Gmsh::generateGeo] Parameter hsize  = (?1$1) = 0.1; now ! (overwrite geo param h !)
+I0319 13:10:07.177000    75 gmsh.cpp:419] [Gmsh::generateGeo] file :"hypercube.geo"/hypercube.geo
+I0319 13:10:07.190927    75 gmsh.cpp:479] Mesh file hypercube.msh generated from geometry hypercube.geo
+I0319 13:10:07.190943    75 gmsh.cpp:480]  - does mesh file name exists : false
+I0319 13:10:07.193485    75 gmsh.cpp:485] Generating hypercube.msh...
+I0319 13:10:07.193549    75 gmsh.cpp:660] [Gmsh::generate] env.part: 1
+I0319 13:10:07.193559    75 gmsh.cpp:661] [Gmsh::generate] partitions: 1
+I0319 13:10:07.193565    75 gmsh.cpp:662] [Gmsh::generate] partitioner: 1
+I0319 13:10:07.232697    75 gmsh.cpp:752] Writing GMSH file hypercube.msh in ascii format
+I0319 13:10:07.248080    75 gmsh.cpp:489] Generating hypercube.msh done.
+I0319 13:10:07.254388    75 gmsh.cpp:501] Broadcast mesh file hypercube.msh to all other mpi processes, (created: 1)
+I0319 13:10:07.254493    75 importergmsh.hpp:992] Reading Msh file hypercube.msh
+I0319 13:10:07.267874    75 importergmsh.hpp:1015] GMSH mesh file version : 4.1 format: ascii size of double: 8
+I0319 13:10:07.270020    75 meshimpl.hpp:1096] We have 40 faces in the database
+I0319 13:10:07.270782    75 meshimpl.hpp:1370] We have now 383 faces in the mesh
+I0319 13:10:07.270912    75 meshimpl.hpp:1908] update boundary points...
+I0319 13:10:07.270928    75 meshimpl.hpp:1928] update boundary elements...
+I0319 13:10:07.275898    75 meshimpl.hpp:569] h average : 0.102942
+I0319 13:10:07.275928    75 meshimpl.hpp:570]     h min : 0.0836612
+I0319 13:10:07.275934    75 meshimpl.hpp:571]     h max : 0.122505
+I0319 13:10:07.283212    75 environment.cpp:2390] Environment::clearSomeMemory before: PETSC get current memory usage (resident memory): 94707.7  KBytes 94.7077  MBytes 0.0947077 GBytes
+I0319 13:10:07.283243    75 environment.cpp:2395] Environment::clearSomeMemory before: PETSC get current PETSC Malloc usage: 0  KBytes 0 MBytes 0 GBytes
+I0319 13:10:07.283257    75 environment.cpp:2397] Environment::clearSomeMemory before: PETSC get maximum PETSC Malloc usage(largest memory ever used so far): 0  KBytes 0 MBytes 0 GBytes
+I0319 13:10:07.284101    75 environment.cpp:2390] Environment::clearSomeMemory after: PETSC get current memory usage (resident memory): 94707.7  KBytes 94.7077  MBytes 0.0947077 GBytes
+I0319 13:10:07.284123    75 environment.cpp:2395] Environment::clearSomeMemory after: PETSC get current PETSC Malloc usage: 0  KBytes 0 MBytes 0 GBytes
+I0319 13:10:07.284129    75 environment.cpp:2397] Environment::clearSomeMemory after: PETSC get maximum PETSC Malloc usage(largest memory ever used so far): 0  KBytes 0 MBytes 0 GBytes

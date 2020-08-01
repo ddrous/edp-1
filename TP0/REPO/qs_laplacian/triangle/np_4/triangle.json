@@ -1,0 +1,14 @@
+{
+    "mesh": {
+        "h5": "triangle.h5",
+        "partition": {
+            "n": "4"
+        },
+        "physicals": {
+            "Dirichlet": "1 1",
+            "Neumann": "3 1",
+            "Robin": "2 1",
+            "Triangle": "4 2"
+        }
+    }
+}

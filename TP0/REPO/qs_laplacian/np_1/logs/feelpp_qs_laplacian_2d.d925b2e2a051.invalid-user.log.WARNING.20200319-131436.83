@@ -1,0 +1,5 @@
+Log file created at: 2020/03/19 13:14:36
+Running on machine: d925b2e2a051
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0319 13:14:36.078652    83 loadmesh.hpp:120] Invalid filename untitled.geo it should have either the .geo. .json or .msh extension
+W0319 13:14:36.141623    83 loadmesh.hpp:274] File "hypercube" not found, generating instead an hypercube in 2D geometry and mesh...

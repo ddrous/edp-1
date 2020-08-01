@@ -1,0 +1,13 @@
+{
+    "application": {
+        "name": "qs_laplacian",
+        "date": {
+            "start": "2020-Mar-25 02:38:01",
+            "end": "2020-Mar-25 02:38:04"
+        },
+        "directories": {
+            "logs": "\/feel\/qs_laplacian\/triangle\/np_1\/logs",
+            "exprs": "\/feel\/qs_laplacian\/triangle\/exprs"
+        }
+    }
+}

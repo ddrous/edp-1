@@ -1,0 +1,1 @@
+-2*nx*x + ny*(y*sin(y) - cos(y)):nx:ny:x:y

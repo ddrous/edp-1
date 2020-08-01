@@ -1,0 +1,4 @@
+Log file created at: 2020/03/25 01:38:00
+Running on machine: aa935533a916
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0325 01:38:00.608108  2374 backendpetsc.cpp:315] Backend  : linear solver failed to converge

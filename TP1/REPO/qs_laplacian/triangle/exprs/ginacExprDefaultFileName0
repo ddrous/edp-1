@@ -1,0 +1,12 @@
+#include <ginac-extern-math.h> 
+#if !defined( pi )
+#define pi 3.141592653589793116
+#endif // pi
+#if !defined( Pi )
+#define Pi 3.141592653589793116
+#endif // Pi
+
+void compiled_ex(const int* an, const double a[], const int* fn, double f[])
+{
+f[0] = pow( (a[1]*a[1])+(a[0]*a[0]),1.6666666666666666e-01)*sin(6.6666666666666663e-01*atan(1.0/a[0]*a[1]));
+}

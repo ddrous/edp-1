@@ -1,0 +1,37 @@
+Log file created at: 2020/03/25 02:22:03
+Running on machine: aa935533a916
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0325 02:22:03.688657  3732 environment.cpp:1601] File /feel/omega_2.geo found
+I0325 02:22:03.726447  3732 environment.cpp:1601] File /feel/omega_2.geo found
+I0325 02:22:03.727809  3732 gmsh.cpp:462] Generate mesh on processor 0/1
+I0325 02:22:03.727912  3732 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ElementOrder not found ! 
+I0325 02:22:03.728024  3732 gmsh.cpp:388] [Gmsh::generateGeo] Parameter hsize  = (?1$1) = 0.05; now ! (overwrite geo param h !)
+I0325 02:22:03.731549  3732 gmsh.cpp:440] "omega_2.geo" exists and its content correspond to the expected geometry
+I0325 02:22:03.731570  3732 gmsh.cpp:479] Mesh file omega_2.msh generated from geometry omega_2.geo
+I0325 02:22:03.731575  3732 gmsh.cpp:480]  - does mesh file name exists : true
+I0325 02:22:03.734694  3732 gmsh.cpp:485] Generating omega_2.msh...
+I0325 02:22:03.734738  3732 gmsh.cpp:660] [Gmsh::generate] env.part: 1
+I0325 02:22:03.734746  3732 gmsh.cpp:661] [Gmsh::generate] partitions: 1
+I0325 02:22:03.734751  3732 gmsh.cpp:662] [Gmsh::generate] partitioner: 1
+I0325 02:22:03.799171  3732 gmsh.cpp:752] Writing GMSH file omega_2.msh in ascii format
+I0325 02:22:03.826941  3732 gmsh.cpp:489] Generating omega_2.msh done.
+I0325 02:22:03.831871  3732 gmsh.cpp:501] Broadcast mesh file omega_2.msh to all other mpi processes, (created: 1)
+I0325 02:22:03.831941  3732 importergmsh.hpp:992] Reading Msh file omega_2.msh
+I0325 02:22:03.835644  3732 importergmsh.hpp:1015] GMSH mesh file version : 4.1 format: ascii size of double: 8
+I0325 02:22:03.849198  3732 meshimpl.hpp:1096] We have 135 faces in the database
+I0325 02:22:03.855036  3732 meshimpl.hpp:1370] We have now 3426 faces in the mesh
+I0325 02:22:03.856305  3732 meshimpl.hpp:1908] update boundary points...
+I0325 02:22:03.856441  3732 meshimpl.hpp:1928] update boundary elements...
+I0325 02:22:03.864176  3732 meshimpl.hpp:569] h average : 0.0502793
+I0325 02:22:03.864204  3732 meshimpl.hpp:570]     h min : 0.0415891
+I0325 02:22:03.864209  3732 meshimpl.hpp:571]     h max : 0.0631882
+I0325 02:22:04.601307  3732 ginac.cpp:149] Parsing cbrt(pow(x, 2) + pow(y, 2))*sin((2.0/3.0)*atan(y/x)):x:y using GiNaC
+I0325 02:22:04.601339  3732 ginac.cpp:171]  . Number of symbols 2
+I0325 02:22:04.601343  3732 ginac.cpp:172]  . symbols : (x,y)
+I0325 02:22:04.601349  3732 ginac.cpp:173]  . Number of params 0
+I0325 02:22:04.601352  3732 ginac.cpp:174]  . symbols : ()
+I0325 02:22:04.601356  3732 ginac.cpp:177] Inserting symbols in symbol table
+I0325 02:22:04.601361  3732 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0325 02:22:04.601364  3732 ginac.cpp:208]  . table : (x, x) (y, y)
+I0325 02:22:04.601398  3732 ginac.cpp:211] Defining parser
+I0325 02:22:04.601441  3732 ginac.cpp:214] parse expression: cbrt(pow(x, 2) + pow(y, 2))*sin((2.0/3.0)*atan(y/x))

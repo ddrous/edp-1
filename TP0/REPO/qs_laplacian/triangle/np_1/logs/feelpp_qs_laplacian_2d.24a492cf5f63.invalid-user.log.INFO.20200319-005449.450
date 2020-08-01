@@ -1,0 +1,155 @@
+Log file created at: 2020/03/19 00:54:49
+Running on machine: 24a492cf5f63
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0319 00:54:49.856576   450 environment.cpp:1601] File /usr/share/feelpp/data/testcases/quickstart/laplacian/triangle/triangle.geo found
+I0319 00:54:49.901720   450 environment.cpp:1601] File /usr/share/feelpp/data/testcases/quickstart/laplacian/triangle/triangle.geo found
+I0319 00:54:49.901896   450 gmsh.cpp:462] Generate mesh on processor 0/1
+I0319 00:54:49.902076   450 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ElementOrder not found ! 
+I0319 00:54:49.902175   450 gmsh.cpp:388] [Gmsh::generateGeo] Parameter hsize  = (?1$1) = 0.025; now ! (overwrite geo param h !)
+I0319 00:54:49.925648   450 gmsh.cpp:432] "triangle.geo" exists but is different from the expected geometry, we overwrite it now
+I0319 00:54:49.938436   450 gmsh.cpp:479] Mesh file triangle.msh generated from geometry triangle.geo
+I0319 00:54:49.938452   450 gmsh.cpp:480]  - does mesh file name exists : true
+I0319 00:54:49.943272   450 gmsh.cpp:485] Generating triangle.msh...
+I0319 00:54:49.943295   450 gmsh.cpp:660] [Gmsh::generate] env.part: 1
+I0319 00:54:49.943316   450 gmsh.cpp:661] [Gmsh::generate] partitions: 1
+I0319 00:54:49.943320   450 gmsh.cpp:662] [Gmsh::generate] partitioner: 1
+I0319 00:54:50.150261   450 gmsh.cpp:752] Writing GMSH file triangle.msh in ascii format
+I0319 00:54:50.248636   450 gmsh.cpp:489] Generating triangle.msh done.
+I0319 00:54:50.284343   450 gmsh.cpp:501] Broadcast mesh file triangle.msh to all other mpi processes, (created: 1)
+I0319 00:54:50.284415   450 importergmsh.hpp:992] Reading Msh file triangle.msh
+I0319 00:54:50.290742   450 importergmsh.hpp:1015] GMSH mesh file version : 4.1 format: ascii size of double: 8
+I0319 00:54:50.335214   450 meshimpl.hpp:1096] We have 274 faces in the database
+I0319 00:54:50.356628   450 meshimpl.hpp:1370] We have now 11393 faces in the mesh
+I0319 00:54:50.363648   450 meshimpl.hpp:1908] update boundary points...
+I0319 00:54:50.364449   450 meshimpl.hpp:1928] update boundary elements...
+I0319 00:54:50.388949   450 meshimpl.hpp:569] h average : 0.0252053
+I0319 00:54:50.388972   450 meshimpl.hpp:570]     h min : 0.0199525
+I0319 00:54:50.388976   450 meshimpl.hpp:571]     h max : 0.0327135
+I0319 00:54:51.095893   450 ginac.cpp:149] Parsing pow(x, 2) + y*cos(y):x:y using GiNaC
+I0319 00:54:51.095921   450 ginac.cpp:171]  . Number of symbols 2
+I0319 00:54:51.095926   450 ginac.cpp:172]  . symbols : (x,y)
+I0319 00:54:51.095932   450 ginac.cpp:173]  . Number of params 0
+I0319 00:54:51.095935   450 ginac.cpp:174]  . symbols : ()
+I0319 00:54:51.095939   450 ginac.cpp:177] Inserting symbols in symbol table
+I0319 00:54:51.095945   450 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0319 00:54:51.095948   450 ginac.cpp:208]  . table : (x, x) (y, y)
+I0319 00:54:51.095978   450 ginac.cpp:211] Defining parser
+I0319 00:54:51.096033   450 ginac.cpp:214] parse expression: pow(x, 2) + y*cos(y)
+I0319 00:54:51.096113   450 ginac.cpp:233] e=x^2+y*cos(y)
+I0319 00:54:51.414062   450 ginac.cpp:149] Parsing {-2*x,y*sin(y) - cos(y)}:x:y using GiNaC
+I0319 00:54:51.414090   450 ginac.cpp:171]  . Number of symbols 2
+I0319 00:54:51.414095   450 ginac.cpp:172]  . symbols : (x,y)
+I0319 00:54:51.414103   450 ginac.cpp:173]  . Number of params 0
+I0319 00:54:51.414110   450 ginac.cpp:174]  . symbols : ()
+I0319 00:54:51.414120   450 ginac.cpp:177] Inserting symbols in symbol table
+I0319 00:54:51.414131   450 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0319 00:54:51.414139   450 ginac.cpp:208]  . table : (x, x) (y, y)
+I0319 00:54:51.414149   450 ginac.cpp:211] Defining parser
+I0319 00:54:51.414180   450 ginac.cpp:214] parse expression: {-2*x,y*sin(y) - cos(y)}
+I0319 00:54:51.414252   450 ginac.cpp:233] e={-2*x,y*sin(y)-cos(y)}
+I0319 00:54:51.708284   450 ginac.cpp:149] Parsing 1 using GiNaC
+I0319 00:54:51.708303   450 ginac.cpp:171]  . Number of symbols 0
+I0319 00:54:51.708307   450 ginac.cpp:172]  . symbols : ()
+I0319 00:54:51.708343   450 ginac.cpp:173]  . Number of params 0
+I0319 00:54:51.708350   450 ginac.cpp:174]  . symbols : ()
+I0319 00:54:51.708355   450 ginac.cpp:177] Inserting symbols in symbol table
+I0319 00:54:51.708359   450 ginac.cpp:197] Inserting params and in symbol table : ()
+I0319 00:54:51.708364   450 ginac.cpp:208]  . table : 
+I0319 00:54:51.708374   450 ginac.cpp:211] Defining parser
+I0319 00:54:51.708441   450 ginac.cpp:214] parse expression: 1
+I0319 00:54:51.708461   450 ginac.cpp:233] e=1
+I0319 00:54:51.708510   450 ginac.cpp:149] Parsing 0 using GiNaC
+I0319 00:54:51.708520   450 ginac.cpp:171]  . Number of symbols 0
+I0319 00:54:51.708525   450 ginac.cpp:172]  . symbols : ()
+I0319 00:54:51.708531   450 ginac.cpp:173]  . Number of params 0
+I0319 00:54:51.708535   450 ginac.cpp:174]  . symbols : ()
+I0319 00:54:51.708540   450 ginac.cpp:177] Inserting symbols in symbol table
+I0319 00:54:51.708545   450 ginac.cpp:197] Inserting params and in symbol table : ()
+I0319 00:54:51.708550   450 ginac.cpp:208]  . table : 
+I0319 00:54:51.708555   450 ginac.cpp:211] Defining parser
+I0319 00:54:51.708575   450 ginac.cpp:214] parse expression: 0
+I0319 00:54:51.708617   450 ginac.cpp:233] e=0
+I0319 00:54:51.708639   450 ginac.cpp:149] Parsing sin(x)*cos(y):x:y using GiNaC
+I0319 00:54:51.708650   450 ginac.cpp:171]  . Number of symbols 2
+I0319 00:54:51.708657   450 ginac.cpp:172]  . symbols : (x,y)
+I0319 00:54:51.708667   450 ginac.cpp:173]  . Number of params 0
+I0319 00:54:51.708673   450 ginac.cpp:174]  . symbols : ()
+I0319 00:54:51.728077   450 ginac.cpp:177] Inserting symbols in symbol table
+I0319 00:54:51.728121   450 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0319 00:54:51.728132   450 ginac.cpp:208]  . table : (x, x) (y, y)
+I0319 00:54:51.728140   450 ginac.cpp:211] Defining parser
+I0319 00:54:51.728175   450 ginac.cpp:214] parse expression: sin(x)*cos(y)
+I0319 00:54:51.728225   450 ginac.cpp:233] e=cos(y)*sin(x)
+I0319 00:54:52.019117   450 ginac.cpp:149] Parsing 0 using GiNaC
+I0319 00:54:52.019157   450 ginac.cpp:171]  . Number of symbols 0
+I0319 00:54:52.019168   450 ginac.cpp:172]  . symbols : ()
+I0319 00:54:52.019179   450 ginac.cpp:173]  . Number of params 0
+I0319 00:54:52.019183   450 ginac.cpp:174]  . symbols : ()
+I0319 00:54:52.019192   450 ginac.cpp:177] Inserting symbols in symbol table
+I0319 00:54:52.019199   450 ginac.cpp:197] Inserting params and in symbol table : ()
+I0319 00:54:52.019207   450 ginac.cpp:208]  . table : 
+I0319 00:54:52.019214   450 ginac.cpp:211] Defining parser
+I0319 00:54:52.019248   450 ginac.cpp:214] parse expression: 0
+I0319 00:54:52.019266   450 ginac.cpp:233] e=0
+I0319 00:54:52.019301   450 ginac.cpp:149] Parsing 1 using GiNaC
+I0319 00:54:52.019315   450 ginac.cpp:171]  . Number of symbols 0
+I0319 00:54:52.019321   450 ginac.cpp:172]  . symbols : ()
+I0319 00:54:52.019328   450 ginac.cpp:173]  . Number of params 0
+I0319 00:54:52.019332   450 ginac.cpp:174]  . symbols : ()
+I0319 00:54:52.019337   450 ginac.cpp:177] Inserting symbols in symbol table
+I0319 00:54:52.019342   450 ginac.cpp:197] Inserting params and in symbol table : ()
+I0319 00:54:52.019347   450 ginac.cpp:208]  . table : 
+I0319 00:54:52.019351   450 ginac.cpp:211] Defining parser
+I0319 00:54:52.019371   450 ginac.cpp:214] parse expression: 1
+I0319 00:54:52.019381   450 ginac.cpp:233] e=1
+I0319 00:54:52.019450   450 ginac.cpp:149] Parsing 0 using GiNaC
+I0319 00:54:52.019459   450 ginac.cpp:171]  . Number of symbols 0
+I0319 00:54:52.019464   450 ginac.cpp:172]  . symbols : ()
+I0319 00:54:52.019470   450 ginac.cpp:173]  . Number of params 0
+I0319 00:54:52.019475   450 ginac.cpp:174]  . symbols : ()
+I0319 00:54:52.019479   450 ginac.cpp:177] Inserting symbols in symbol table
+I0319 00:54:52.019484   450 ginac.cpp:197] Inserting params and in symbol table : ()
+I0319 00:54:52.019490   450 ginac.cpp:208]  . table : 
+I0319 00:54:52.019495   450 ginac.cpp:211] Defining parser
+I0319 00:54:52.019517   450 ginac.cpp:214] parse expression: 0
+I0319 00:54:52.019529   450 ginac.cpp:233] e=0
+I0319 00:54:52.049868   450 element_impl.hpp:268] creating element u : u
+I0319 00:54:52.049932   450 element_impl.hpp:268] creating element g : u
+I0319 00:54:52.079042   450 integrator.hpp:988] [integrator::assemble FormType& __form, mpl::int_<MESH_ELEMENTS> /**/, mpl::bool_<true>
+I0319 00:54:52.219688   450 integrator.hpp:924] [integrator::assemble bilinear form] with_relation_mesh (same_mesh: 1 test_related_to_trial: 1)
+I0319 00:54:52.219707   450 integrator.hpp:988] [integrator::assemble FormType& __form, mpl::int_<MESH_ELEMENTS> /**/, mpl::bool_<true>
+I0319 00:54:52.293710   450 integrator.hpp:924] [integrator::assemble bilinear form] with_relation_mesh (same_mesh: 1 test_related_to_trial: 1)
+I0319 00:54:52.310252   450 matrixpetsc.cpp:1766] MatrixPETSc:: zeroRows seq elimination
+I0319 00:54:52.310366   450 matrixpetsc.cpp:1807] MatrixPETSc:: zeroRows seq unsymmetric
+I0319 00:54:52.313316   450 functionspetsc.cpp:39] mat solver package before 6
+I0319 00:54:52.313338   450 functionspetsc.cpp:264] mat solver package is mumps
+I0319 00:54:52.517321   450 solverlinearpetsc.cpp:642] [solverlinearpetsc] reason = 2
+I0319 00:54:52.517647   450 exporterimpl.hpp:219] [Exporter] format :  ensightgold
+I0319 00:54:52.517654   450 exporterimpl.hpp:220] [Exporter] N      :  1
+I0319 00:54:52.532974   450 element_impl.hpp:268] creating element field : field
+I0319 00:54:52.534715   450 element_impl.hpp:268] creating element pid : field
+I0319 00:54:52.584120   450 element_impl.hpp:268] creating element p : 
+I0319 00:54:52.592255   450 element_impl.hpp:268] creating element u : u
+I0319 00:54:52.621448   450 element_impl.hpp:268] creating element u : u
+I0319 00:54:52.649677   450 element_impl.hpp:268] creating element k : u
+I0319 00:54:52.658526   450 element_impl.hpp:268] creating element f : u
+I0319 00:54:52.670351   450 element_impl.hpp:268] creating element g : u
+I0319 00:54:52.677503   450 element_impl.hpp:268] creating element r_1 : u
+I0319 00:54:52.685307   450 element_impl.hpp:268] creating element r_2 : u
+I0319 00:54:52.767163   450 exporterensightgold_impl.hpp:1239] writing part 5
+I0319 00:54:52.779542   450 exporterensightgold_impl.hpp:1352] ExporterEnsightGold::writeVariableFiles Nodal: 6
+I0319 00:54:52.779556   450 exporterensightgold_impl.hpp:1353] ExporterEnsightGold::writeVariableFiles Element: 2
+I0319 00:54:53.446812   450 environment.cpp:2390] Environment::clearSomeMemory before: PETSC get current memory usage (resident memory): 192279  KBytes 192.279  MBytes 0.192279 GBytes
+I0319 00:54:53.447954   450 environment.cpp:2395] Environment::clearSomeMemory before: PETSC get current PETSC Malloc usage: 0  KBytes 0 MBytes 0 GBytes
+I0319 00:54:53.448001   450 environment.cpp:2397] Environment::clearSomeMemory before: PETSC get maximum PETSC Malloc usage(largest memory ever used so far): 0  KBytes 0 MBytes 0 GBytes
+I0319 00:54:53.448047   450 backendpetsc.cpp:99] Deleting linear solver petsc
+I0319 00:54:53.448171   450 backendpetsc.cpp:103] Deleting backend petsc
+I0319 00:54:53.448180   450 preconditionerpetsc.cpp:278] PreconditionerPetsc<T>::clear
+I0319 00:54:53.448185   450 preconditionerpetsc.cpp:288] calling PCDestroy
+I0319 00:54:53.448400   450 backend.cpp:139] Sending delete signal to all observers... 
+I0319 00:54:53.448773   450 preconditionerpetsc.cpp:278] PreconditionerPetsc<T>::clear
+I0319 00:54:53.448786   450 backend.cpp:139] Sending delete signal to all observers... 
+I0319 00:54:53.449326   450 preconditionerpetsc.cpp:278] PreconditionerPetsc<T>::clear
+I0319 00:54:53.450500   450 environment.cpp:2390] Environment::clearSomeMemory after: PETSC get current memory usage (resident memory): 192279  KBytes 192.279  MBytes 0.192279 GBytes
+I0319 00:54:53.450544   450 environment.cpp:2395] Environment::clearSomeMemory after: PETSC get current PETSC Malloc usage: 0  KBytes 0 MBytes 0 GBytes
+I0319 00:54:53.450553   450 environment.cpp:2397] Environment::clearSomeMemory after: PETSC get maximum PETSC Malloc usage(largest memory ever used so far): 0  KBytes 0 MBytes 0 GBytes

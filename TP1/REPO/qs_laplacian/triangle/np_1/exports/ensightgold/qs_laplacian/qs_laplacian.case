@@ -1,0 +1,22 @@
+FORMAT:
+type: ensight gold
+GEOMETRY:
+model: qs_laplacian.geo
+VARIABLES:
+scalar per node: 1 f qs_laplacian.f.scl.****
+vector per node: 1 flux qs_laplacian.flux.vec.****
+scalar per node: 1 g qs_laplacian.g.scl.****
+scalar per node: 1 k qs_laplacian.k.scl.****
+scalar per node: 1 p qs_laplacian.p.scl.****
+scalar per node: 1 r_1 qs_laplacian.r_1.scl.****
+scalar per node: 1 r_2 qs_laplacian.r_2.scl.****
+scalar per node: 1 solution qs_laplacian.solution.scl.****
+scalar per element: 1 pid qs_laplacian.pid.scl.****
+vector per element: 1 u qs_laplacian.u.vec.****
+TIME:
+time set:        1
+number of steps: 1
+filename start number: 1
+filename increment: 1
+time values: 0.000000e+00 
+

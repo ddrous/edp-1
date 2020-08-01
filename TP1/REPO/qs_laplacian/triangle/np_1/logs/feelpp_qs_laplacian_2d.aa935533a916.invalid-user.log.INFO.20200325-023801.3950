@@ -1,0 +1,191 @@
+Log file created at: 2020/03/25 02:38:01
+Running on machine: aa935533a916
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0325 02:38:01.133108  3950 environment.cpp:1629]  looking for "/feel/omega_2.geo"
+I0325 02:38:01.167635  3950 environment.cpp:1638] File "/feel/omega_2.geo" found
+I0325 02:38:01.167922  3950 environment.cpp:1601] File /feel/omega_2.geo found
+I0325 02:38:01.169433  3950 gmsh.cpp:462] Generate mesh on processor 0/1
+I0325 02:38:01.169590  3950 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ElementOrder not found ! 
+I0325 02:38:01.169689  3950 gmsh.cpp:388] [Gmsh::generateGeo] Parameter hsize  = (?1$1) = 0.05; now ! (overwrite geo param h !)
+I0325 02:38:01.171102  3950 gmsh.cpp:440] "omega_2.geo" exists and its content correspond to the expected geometry
+I0325 02:38:01.171119  3950 gmsh.cpp:479] Mesh file omega_2.msh generated from geometry omega_2.geo
+I0325 02:38:01.171124  3950 gmsh.cpp:480]  - does mesh file name exists : true
+I0325 02:38:01.172466  3950 gmsh.cpp:485] Generating omega_2.msh...
+I0325 02:38:01.172552  3950 gmsh.cpp:660] [Gmsh::generate] env.part: 1
+I0325 02:38:01.172562  3950 gmsh.cpp:661] [Gmsh::generate] partitions: 1
+I0325 02:38:01.172569  3950 gmsh.cpp:662] [Gmsh::generate] partitioner: 1
+I0325 02:38:01.232000  3950 gmsh.cpp:752] Writing GMSH file omega_2.msh in ascii format
+I0325 02:38:01.260653  3950 gmsh.cpp:489] Generating omega_2.msh done.
+I0325 02:38:01.265065  3950 gmsh.cpp:501] Broadcast mesh file omega_2.msh to all other mpi processes, (created: 1)
+I0325 02:38:01.265169  3950 importergmsh.hpp:992] Reading Msh file omega_2.msh
+I0325 02:38:01.268226  3950 importergmsh.hpp:1015] GMSH mesh file version : 4.1 format: ascii size of double: 8
+I0325 02:38:01.281004  3950 meshimpl.hpp:1096] We have 135 faces in the database
+I0325 02:38:01.288916  3950 meshimpl.hpp:1370] We have now 3426 faces in the mesh
+I0325 02:38:01.290901  3950 meshimpl.hpp:1908] update boundary points...
+I0325 02:38:01.291040  3950 meshimpl.hpp:1928] update boundary elements...
+I0325 02:38:01.300952  3950 meshimpl.hpp:569] h average : 0.0502793
+I0325 02:38:01.301017  3950 meshimpl.hpp:570]     h min : 0.0415891
+I0325 02:38:01.301034  3950 meshimpl.hpp:571]     h max : 0.0631882
+I0325 02:38:02.038156  3950 ginac.cpp:149] Parsing pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*sin((2.0/3.0)*atan(y/x)):x:y using GiNaC
+I0325 02:38:02.038187  3950 ginac.cpp:171]  . Number of symbols 2
+I0325 02:38:02.038192  3950 ginac.cpp:172]  . symbols : (x,y)
+I0325 02:38:02.038198  3950 ginac.cpp:173]  . Number of params 0
+I0325 02:38:02.038200  3950 ginac.cpp:174]  . symbols : ()
+I0325 02:38:02.038203  3950 ginac.cpp:177] Inserting symbols in symbol table
+I0325 02:38:02.038213  3950 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0325 02:38:02.038218  3950 ginac.cpp:208]  . table : (x, x) (y, y)
+I0325 02:38:02.038246  3950 ginac.cpp:211] Defining parser
+I0325 02:38:02.038288  3950 ginac.cpp:214] parse expression: pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*sin((2.0/3.0)*atan(y/x))
+I0325 02:38:02.038429  3950 ginac.cpp:233] e=sin((0.6666666666666666667)*atan(x^(-1)*y))*(x^2+y^2)^(0.16666666666666666667)
+I0325 02:38:02.245689  3950 ginac.cpp:149] Parsing {-1.0/3.0*x*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 5.0/6.0) + (2.0/3.0)*y*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(pow(x, 2)*(1 + pow(y, 2)/pow(x, 2))),-1.0/3.0*y*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 5.0/6.0) - 2.0/3.0*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(x*(1 + pow(y, 2)/pow(x, 2)))}:x:y using GiNaC
+I0325 02:38:02.245709  3950 ginac.cpp:171]  . Number of symbols 2
+I0325 02:38:02.245713  3950 ginac.cpp:172]  . symbols : (x,y)
+I0325 02:38:02.245719  3950 ginac.cpp:173]  . Number of params 0
+I0325 02:38:02.245723  3950 ginac.cpp:174]  . symbols : ()
+I0325 02:38:02.245725  3950 ginac.cpp:177] Inserting symbols in symbol table
+I0325 02:38:02.245730  3950 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0325 02:38:02.245733  3950 ginac.cpp:208]  . table : (x, x) (y, y)
+I0325 02:38:02.245739  3950 ginac.cpp:211] Defining parser
+I0325 02:38:02.245760  3950 ginac.cpp:214] parse expression: {-1.0/3.0*x*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 5.0/6.0) + (2.0/3.0)*y*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(pow(x, 2)*(1 + pow(y, 2)/pow(x, 2))),-1.0/3.0*y*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 5.0/6.0) - 2.0/3.0*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(x*(1 + pow(y, 2)/pow(x, 2)))}
+I0325 02:38:02.246074  3950 ginac.cpp:233] e={-(0.33333333333333333334)*sin((0.6666666666666666667)*atan(y*x^(-1)))*(y^2+x^2)^(-0.83333333333333333337)*x+(0.6666666666666666667)*(1+y^2*x^(-2))^(-1)*cos((0.6666666666666666667)*atan(y*x^(-1)))*y*(y^2+x^2)^(0.16666666666666666667)*x^(-2),-(0.6666666666666666667)*(1+y^2*x^(-2))^(-1)*cos((0.6666666666666666667)*atan(y*x^(-1)))*(y^2+x^2)^(0.16666666666666666667)*x^(-1)-(0.33333333333333333334)*y*sin((0.6666666666666666667)*atan(y*x^(-1)))*(y^2+x^2)^(-0.83333333333333333337)}
+I0325 02:38:02.480346  3950 ginac.cpp:149] Parsing 1 using GiNaC
+I0325 02:38:02.480372  3950 ginac.cpp:171]  . Number of symbols 0
+I0325 02:38:02.480379  3950 ginac.cpp:172]  . symbols : ()
+I0325 02:38:02.480387  3950 ginac.cpp:173]  . Number of params 0
+I0325 02:38:02.480391  3950 ginac.cpp:174]  . symbols : ()
+I0325 02:38:02.480397  3950 ginac.cpp:177] Inserting symbols in symbol table
+I0325 02:38:02.480401  3950 ginac.cpp:197] Inserting params and in symbol table : ()
+I0325 02:38:02.487812  3950 ginac.cpp:208]  . table : 
+I0325 02:38:02.487828  3950 ginac.cpp:211] Defining parser
+I0325 02:38:02.487867  3950 ginac.cpp:214] parse expression: 1
+I0325 02:38:02.487886  3950 ginac.cpp:233] e=1
+I0325 02:38:02.487931  3950 ginac.cpp:149] Parsing nx*(-1.0/3.0*x*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 5.0/6.0) + (2.0/3.0)*y*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(pow(x, 2)*(1 + pow(y, 2)/pow(x, 2)))) + ny*(-1.0/3.0*y*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 5.0/6.0) - 2.0/3.0*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(x*(1 + pow(y, 2)/pow(x, 2)))):nx:ny:x:y using GiNaC
+I0325 02:38:02.487951  3950 ginac.cpp:171]  . Number of symbols 4
+I0325 02:38:02.487957  3950 ginac.cpp:172]  . symbols : (nx,ny,x,y)
+I0325 02:38:02.487967  3950 ginac.cpp:173]  . Number of params 0
+I0325 02:38:02.487973  3950 ginac.cpp:174]  . symbols : ()
+I0325 02:38:02.487979  3950 ginac.cpp:177] Inserting symbols in symbol table
+I0325 02:38:02.487988  3950 ginac.cpp:197] Inserting params and in symbol table : (nx,ny,x,y)
+I0325 02:38:02.487998  3950 ginac.cpp:208]  . table : (nx, nx) (ny, ny) (x, x) (y, y)
+I0325 02:38:02.488006  3950 ginac.cpp:211] Defining parser
+I0325 02:38:02.488027  3950 ginac.cpp:214] parse expression: nx*(-1.0/3.0*x*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 5.0/6.0) + (2.0/3.0)*y*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(pow(x, 2)*(1 + pow(y, 2)/pow(x, 2)))) + ny*(-1.0/3.0*y*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 5.0/6.0) - 2.0/3.0*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(x*(1 + pow(y, 2)/pow(x, 2))))
+I0325 02:38:02.488407  3950 ginac.cpp:233] e=ny*(-(0.6666666666666666667)*cos((0.6666666666666666667)*atan(y*x^(-1)))*(1+y^2*x^(-2))^(-1)*(y^2+x^2)^(0.16666666666666666667)*x^(-1)-(0.33333333333333333334)*y*sin((0.6666666666666666667)*atan(y*x^(-1)))*(y^2+x^2)^(-0.83333333333333333337))+nx*((0.6666666666666666667)*cos((0.6666666666666666667)*atan(y*x^(-1)))*y*(1+y^2*x^(-2))^(-1)*(y^2+x^2)^(0.16666666666666666667)*x^(-2)-(0.33333333333333333334)*sin((0.6666666666666666667)*atan(y*x^(-1)))*(y^2+x^2)^(-0.83333333333333333337)*x)
+I0325 02:38:02.713623  3950 ginac.cpp:149] Parsing (5.0/9.0)*pow(x, 2)*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 11.0/6.0) + (5.0/9.0)*pow(y, 2)*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 11.0/6.0) - 2.0/3.0*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 5.0/6.0) + (4.0/9.0)*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*sin((2.0/3.0)*atan(y/x))/(pow(x, 2)*pow(1 + pow(y, 2)/pow(x, 2), 2)) - 4.0/3.0*y*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(pow(x, 3)*(1 + pow(y, 2)/pow(x, 2))) + (4.0/3.0)*y*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(pow(x, 3)*pow(1 + pow(y, 2)/pow(x, 2), 2)) + (4.0/9.0)*pow(y, 2)*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*sin((2.0/3.0)*atan(y/x))/(pow(x, 4)*pow(1 + pow(y, 2)/pow(x, 2), 2)) + (4.0/3.0)*pow(y, 3)*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(pow(x, 5)*pow(1 + pow(y, 2)/pow(x, 2), 2)):x:y using GiNaC
+I0325 02:38:02.713660  3950 ginac.cpp:171]  . Number of symbols 2
+I0325 02:38:02.713663  3950 ginac.cpp:172]  . symbols : (x,y)
+I0325 02:38:02.713668  3950 ginac.cpp:173]  . Number of params 0
+I0325 02:38:02.713672  3950 ginac.cpp:174]  . symbols : ()
+I0325 02:38:02.713680  3950 ginac.cpp:177] Inserting symbols in symbol table
+I0325 02:38:02.713688  3950 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0325 02:38:02.713694  3950 ginac.cpp:208]  . table : (x, x) (y, y)
+I0325 02:38:02.713703  3950 ginac.cpp:211] Defining parser
+I0325 02:38:02.713730  3950 ginac.cpp:214] parse expression: (5.0/9.0)*pow(x, 2)*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 11.0/6.0) + (5.0/9.0)*pow(y, 2)*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 11.0/6.0) - 2.0/3.0*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 5.0/6.0) + (4.0/9.0)*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*sin((2.0/3.0)*atan(y/x))/(pow(x, 2)*pow(1 + pow(y, 2)/pow(x, 2), 2)) - 4.0/3.0*y*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(pow(x, 3)*(1 + pow(y, 2)/pow(x, 2))) + (4.0/3.0)*y*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(pow(x, 3)*pow(1 + pow(y, 2)/pow(x, 2), 2)) + (4.0/9.0)*pow(y, 2)*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*sin((2.0/3.0)*atan(y/x))/(pow(x, 4)*pow(1 + pow(y, 2)/pow(x, 2), 2)) + (4.0/3.0)*pow(y, 3)*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(pow(x, 5)*pow(1 + pow(y, 2)/pow(x, 2), 2))
+I0325 02:38:02.720603  3950 ginac.cpp:233] e=(0.55555555555555555556)*(x^2+y^2)^(-1.8333333333333333334)*sin((0.6666666666666666667)*atan(x^(-1)*y))*x^2+(1.3333333333333333334)*(x^2+y^2)^(0.16666666666666666667)*cos((0.6666666666666666667)*atan(x^(-1)*y))*(1+x^(-2)*y^2)^(-2)*x^(-3)*y+(0.44444444444444444444)*(x^2+y^2)^(0.16666666666666666667)*(1+x^(-2)*y^2)^(-2)*sin((0.6666666666666666667)*atan(x^(-1)*y))*x^(-4)*y^2-(0.6666666666666666667)*(x^2+y^2)^(-0.83333333333333333337)*sin((0.6666666666666666667)*atan(x^(-1)*y))+(0.55555555555555555556)*(x^2+y^2)^(-1.8333333333333333334)*sin((0.6666666666666666667)*atan(x^(-1)*y))*y^2+(0.44444444444444444444)*(x^2+y^2)^(0.16666666666666666667)*(1+x^(-2)*y^2)^(-2)*sin((0.6666666666666666667)*atan(x^(-1)*y))*x^(-2)+(1.3333333333333333334)*(x^2+y^2)^(0.16666666666666666667)*cos((0.6666666666666666667)*atan(x^(-1)*y))*(1+x^(-2)*y^2)^(-2)*x^(-5)*y^3-(1.3333333333333333334)*(x^2+y^2)^(0.16666666666666666667)*cos((0.6666666666666666667)*atan(x^(-1)*y))*(1+x^(-2)*y^2)^(-1)*x^(-3)*y
+I0325 02:38:02.960151  3950 ginac.cpp:149] Parsing pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*sin((2.0/3.0)*atan(y/x)):x:y using GiNaC
+I0325 02:38:02.960177  3950 ginac.cpp:171]  . Number of symbols 2
+I0325 02:38:02.960183  3950 ginac.cpp:172]  . symbols : (x,y)
+I0325 02:38:02.960206  3950 ginac.cpp:173]  . Number of params 0
+I0325 02:38:02.960209  3950 ginac.cpp:174]  . symbols : ()
+I0325 02:38:02.960216  3950 ginac.cpp:177] Inserting symbols in symbol table
+I0325 02:38:02.960223  3950 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0325 02:38:02.960229  3950 ginac.cpp:208]  . table : (x, x) (y, y)
+I0325 02:38:02.960238  3950 ginac.cpp:211] Defining parser
+I0325 02:38:02.960266  3950 ginac.cpp:214] parse expression: pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*sin((2.0/3.0)*atan(y/x))
+I0325 02:38:02.960405  3950 ginac.cpp:233] e=sin((0.6666666666666666667)*atan(y*x^(-1)))*(y^2+x^2)^(0.16666666666666666667)
+I0325 02:38:02.960561  3950 ginac.cpp:149] Parsing 1 using GiNaC
+I0325 02:38:02.960569  3950 ginac.cpp:171]  . Number of symbols 0
+I0325 02:38:02.960572  3950 ginac.cpp:172]  . symbols : ()
+I0325 02:38:02.960575  3950 ginac.cpp:173]  . Number of params 0
+I0325 02:38:02.960578  3950 ginac.cpp:174]  . symbols : ()
+I0325 02:38:02.960582  3950 ginac.cpp:177] Inserting symbols in symbol table
+I0325 02:38:02.960584  3950 ginac.cpp:197] Inserting params and in symbol table : ()
+I0325 02:38:02.960587  3950 ginac.cpp:208]  . table : 
+I0325 02:38:02.960592  3950 ginac.cpp:211] Defining parser
+I0325 02:38:02.960610  3950 ginac.cpp:214] parse expression: 1
+I0325 02:38:02.960619  3950 ginac.cpp:233] e=1
+I0325 02:38:02.960636  3950 ginac.cpp:149] Parsing nx*(-1.0/3.0*x*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 5.0/6.0) + (2.0/3.0)*y*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(pow(x, 2)*(1 + pow(y, 2)/pow(x, 2)))) + ny*(-1.0/3.0*y*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 5.0/6.0) - 2.0/3.0*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(x*(1 + pow(y, 2)/pow(x, 2)))) - pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*sin((2.0/3.0)*atan(y/x)):nx:ny:x:y using GiNaC
+I0325 02:38:02.960650  3950 ginac.cpp:171]  . Number of symbols 4
+I0325 02:38:02.960655  3950 ginac.cpp:172]  . symbols : (nx,ny,x,y)
+I0325 02:38:02.960661  3950 ginac.cpp:173]  . Number of params 0
+I0325 02:38:02.960664  3950 ginac.cpp:174]  . symbols : ()
+I0325 02:38:02.960669  3950 ginac.cpp:177] Inserting symbols in symbol table
+I0325 02:38:02.960675  3950 ginac.cpp:197] Inserting params and in symbol table : (nx,ny,x,y)
+I0325 02:38:02.960680  3950 ginac.cpp:208]  . table : (nx, nx) (ny, ny) (x, x) (y, y)
+I0325 02:38:02.967054  3950 ginac.cpp:211] Defining parser
+I0325 02:38:02.967101  3950 ginac.cpp:214] parse expression: nx*(-1.0/3.0*x*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 5.0/6.0) + (2.0/3.0)*y*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(pow(x, 2)*(1 + pow(y, 2)/pow(x, 2)))) + ny*(-1.0/3.0*y*sin((2.0/3.0)*atan(y/x))/pow(pow(x, 2) + pow(y, 2), 5.0/6.0) - 2.0/3.0*pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*cos((2.0/3.0)*atan(y/x))/(x*(1 + pow(y, 2)/pow(x, 2)))) - pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*sin((2.0/3.0)*atan(y/x))
+I0325 02:38:02.967530  3950 ginac.cpp:233] e=-sin((0.6666666666666666667)*atan(x^(-1)*y))*(x^2+y^2)^(0.16666666666666666667)+(-(0.33333333333333333334)*sin((0.6666666666666666667)*atan(x^(-1)*y))*(x^2+y^2)^(-0.83333333333333333337)*y-(0.6666666666666666667)*x^(-1)*cos((0.6666666666666666667)*atan(x^(-1)*y))*(x^2+y^2)^(0.16666666666666666667)*(1+x^(-2)*y^2)^(-1))*ny+nx*(-(0.33333333333333333334)*x*sin((0.6666666666666666667)*atan(x^(-1)*y))*(x^2+y^2)^(-0.83333333333333333337)+(0.6666666666666666667)*x^(-2)*cos((0.6666666666666666667)*atan(x^(-1)*y))*(x^2+y^2)^(0.16666666666666666667)*(1+x^(-2)*y^2)^(-1)*y)
+I0325 02:38:03.278154  3950 element_impl.hpp:268] creating element u : u
+I0325 02:38:03.278172  3950 element_impl.hpp:268] creating element g : u
+I0325 02:38:03.291426  3950 integrator.hpp:988] [integrator::assemble FormType& __form, mpl::int_<MESH_ELEMENTS> /**/, mpl::bool_<true>
+I0325 02:38:03.351271  3950 integrator.hpp:924] [integrator::assemble bilinear form] with_relation_mesh (same_mesh: 1 test_related_to_trial: 1)
+I0325 02:38:03.351301  3950 integrator.hpp:988] [integrator::assemble FormType& __form, mpl::int_<MESH_ELEMENTS> /**/, mpl::bool_<true>
+I0325 02:38:03.387306  3950 matrixpetsc.cpp:1766] MatrixPETSc:: zeroRows seq elimination
+I0325 02:38:03.387380  3950 matrixpetsc.cpp:1807] MatrixPETSc:: zeroRows seq unsymmetric
+I0325 02:38:03.389117  3950 functionspetsc.cpp:39] mat solver package before 6
+I0325 02:38:03.389134  3950 functionspetsc.cpp:264] mat solver package is mumps
+I0325 02:38:03.441160  3950 solverlinearpetsc.cpp:642] [solverlinearpetsc] reason = 2
+I0325 02:38:03.441361  3950 exporterimpl.hpp:219] [Exporter] format :  ensightgold
+I0325 02:38:03.441370  3950 exporterimpl.hpp:220] [Exporter] N      :  1
+I0325 02:38:03.444275  3950 element_impl.hpp:268] creating element field : field
+I0325 02:38:03.444806  3950 element_impl.hpp:268] creating element pid : field
+I0325 02:38:03.459614  3950 element_impl.hpp:268] creating element p : 
+I0325 02:38:03.462007  3950 element_impl.hpp:268] creating element u : u
+I0325 02:38:03.471423  3950 element_impl.hpp:268] creating element u : u
+I0325 02:38:03.482465  3950 element_impl.hpp:268] creating element k : u
+I0325 02:38:03.485309  3950 element_impl.hpp:268] creating element f : u
+I0325 02:38:03.495702  3950 element_impl.hpp:268] creating element g : u
+I0325 02:38:03.500223  3950 element_impl.hpp:268] creating element r_1 : u
+I0325 02:38:03.502403  3950 element_impl.hpp:268] creating element r_2 : u
+I0325 02:38:03.508926  3950 element_impl.hpp:268] creating element solution : u
+I0325 02:38:03.512646  3950 element_impl.hpp:268] creating element flux : u
+I0325 02:38:03.518910  3950 element_impl.hpp:268] creating element flux : u
+I0325 02:38:03.586828  3950 exporterensightgold_impl.hpp:1239] writing part 3
+I0325 02:38:03.594244  3950 exporterensightgold_impl.hpp:1352] ExporterEnsightGold::writeVariableFiles Nodal: 8
+I0325 02:38:03.594260  3950 exporterensightgold_impl.hpp:1353] ExporterEnsightGold::writeVariableFiles Element: 2
+I0325 02:38:04.110014  3950 ginac.cpp:149] Parsing pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*sin((2.0/3.0)*atan(y/x)):x:y using GiNaC
+I0325 02:38:04.110046  3950 ginac.cpp:171]  . Number of symbols 2
+I0325 02:38:04.110054  3950 ginac.cpp:172]  . symbols : (x,y)
+I0325 02:38:04.110061  3950 ginac.cpp:173]  . Number of params 0
+I0325 02:38:04.110069  3950 ginac.cpp:174]  . symbols : ()
+I0325 02:38:04.110075  3950 ginac.cpp:177] Inserting symbols in symbol table
+I0325 02:38:04.110083  3950 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0325 02:38:04.110090  3950 ginac.cpp:208]  . table : (x, x) (y, y)
+I0325 02:38:04.110098  3950 ginac.cpp:211] Defining parser
+I0325 02:38:04.110126  3950 ginac.cpp:214] parse expression: pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*sin((2.0/3.0)*atan(y/x))
+I0325 02:38:04.110235  3950 ginac.cpp:233] e=sin((0.6666666666666666667)*atan(x^(-1)*y))*(x^2+y^2)^(0.16666666666666666667)
+I0325 02:38:04.122231  3950 ginac.cpp:149] Parsing pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*sin((2.0/3.0)*atan(y/x)):x:y using GiNaC
+I0325 02:38:04.122259  3950 ginac.cpp:171]  . Number of symbols 2
+I0325 02:38:04.122267  3950 ginac.cpp:172]  . symbols : (x,y)
+I0325 02:38:04.122278  3950 ginac.cpp:173]  . Number of params 0
+I0325 02:38:04.122284  3950 ginac.cpp:174]  . symbols : ()
+I0325 02:38:04.122289  3950 ginac.cpp:177] Inserting symbols in symbol table
+I0325 02:38:04.122295  3950 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0325 02:38:04.122301  3950 ginac.cpp:208]  . table : (x, x) (y, y)
+I0325 02:38:04.122330  3950 ginac.cpp:211] Defining parser
+I0325 02:38:04.122362  3950 ginac.cpp:214] parse expression: pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*sin((2.0/3.0)*atan(y/x))
+I0325 02:38:04.122462  3950 ginac.cpp:233] e=sin((0.6666666666666666667)*atan(x^(-1)*y))*(x^2+y^2)^(0.16666666666666666667)
+I0325 02:38:04.122592  3950 ginac.cpp:149] Parsing pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*sin((2.0/3.0)*atan(y/x)):x:y using GiNaC
+I0325 02:38:04.122604  3950 ginac.cpp:171]  . Number of symbols 2
+I0325 02:38:04.122609  3950 ginac.cpp:172]  . symbols : (x,y)
+I0325 02:38:04.122615  3950 ginac.cpp:173]  . Number of params 0
+I0325 02:38:04.122619  3950 ginac.cpp:174]  . symbols : ()
+I0325 02:38:04.122623  3950 ginac.cpp:177] Inserting symbols in symbol table
+I0325 02:38:04.122629  3950 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0325 02:38:04.122634  3950 ginac.cpp:208]  . table : (x, x) (y, y)
+I0325 02:38:04.122640  3950 ginac.cpp:211] Defining parser
+I0325 02:38:04.122661  3950 ginac.cpp:214] parse expression: pow(pow(x, 2) + pow(y, 2), 1.0/6.0)*sin((2.0/3.0)*atan(y/x))
+I0325 02:38:04.124508  3950 ginac.cpp:233] e=sin((0.6666666666666666667)*atan(x^(-1)*y))*(x^2+y^2)^(0.16666666666666666667)
+I0325 02:38:04.440599  3950 environment.cpp:2390] Environment::clearSomeMemory before: PETSC get current memory usage (resident memory): 153129  KBytes 153.129  MBytes 0.153129 GBytes
+I0325 02:38:04.440644  3950 environment.cpp:2395] Environment::clearSomeMemory before: PETSC get current PETSC Malloc usage: 0  KBytes 0 MBytes 0 GBytes
+I0325 02:38:04.440666  3950 environment.cpp:2397] Environment::clearSomeMemory before: PETSC get maximum PETSC Malloc usage(largest memory ever used so far): 0  KBytes 0 MBytes 0 GBytes
+I0325 02:38:04.440687  3950 backendpetsc.cpp:99] Deleting linear solver petsc
+I0325 02:38:04.440743  3950 backendpetsc.cpp:103] Deleting backend petsc
+I0325 02:38:04.440748  3950 preconditionerpetsc.cpp:278] PreconditionerPetsc<T>::clear
+I0325 02:38:04.440752  3950 preconditionerpetsc.cpp:288] calling PCDestroy
+I0325 02:38:04.440899  3950 backend.cpp:139] Sending delete signal to all observers... 
+I0325 02:38:04.441088  3950 preconditionerpetsc.cpp:278] PreconditionerPetsc<T>::clear
+I0325 02:38:04.441092  3950 backend.cpp:139] Sending delete signal to all observers... 
+I0325 02:38:04.441423  3950 preconditionerpetsc.cpp:278] PreconditionerPetsc<T>::clear
+I0325 02:38:04.442462  3950 environment.cpp:2390] Environment::clearSomeMemory after: PETSC get current memory usage (resident memory): 153129  KBytes 153.129  MBytes 0.153129 GBytes
+I0325 02:38:04.442533  3950 environment.cpp:2395] Environment::clearSomeMemory after: PETSC get current PETSC Malloc usage: 0  KBytes 0 MBytes 0 GBytes
+I0325 02:38:04.442538  3950 environment.cpp:2397] Environment::clearSomeMemory after: PETSC get maximum PETSC Malloc usage(largest memory ever used so far): 0  KBytes 0 MBytes 0 GBytes

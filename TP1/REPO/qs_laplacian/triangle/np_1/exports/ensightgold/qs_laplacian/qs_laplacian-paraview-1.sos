@@ -1,0 +1,9 @@
+FORMAT:
+type: master_server gold 
+SERVERS
+number of servers: 1 
+#Server 1
+machine id: aa935533a916
+executable: /usr/local/bin/ensight76/bin/ensight7.server
+data_path: /feel/qs_laplacian/triangle/np_1
+casefile: qs_laplacian.case

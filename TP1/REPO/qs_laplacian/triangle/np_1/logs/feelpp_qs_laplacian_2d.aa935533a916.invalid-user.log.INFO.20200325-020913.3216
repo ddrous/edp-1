@@ -1,0 +1,38 @@
+Log file created at: 2020/03/25 02:09:13
+Running on machine: aa935533a916
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0325 02:09:13.031177  3216 environment.cpp:1629]  looking for "/feel/omega_2.geo"
+I0325 02:09:13.059003  3216 environment.cpp:1638] File "/feel/omega_2.geo" found
+I0325 02:09:13.059339  3216 environment.cpp:1601] File /feel/omega_2.geo found
+I0325 02:09:13.061805  3216 gmsh.cpp:462] Generate mesh on processor 0/1
+I0325 02:09:13.061913  3216 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ElementOrder not found ! 
+I0325 02:09:13.062070  3216 gmsh.cpp:388] [Gmsh::generateGeo] Parameter hsize  = (?1$1) = 0.05; now ! (overwrite geo param h !)
+I0325 02:09:13.063607  3216 gmsh.cpp:440] "omega_2.geo" exists and its content correspond to the expected geometry
+I0325 02:09:13.063625  3216 gmsh.cpp:479] Mesh file omega_2.msh generated from geometry omega_2.geo
+I0325 02:09:13.063630  3216 gmsh.cpp:480]  - does mesh file name exists : true
+I0325 02:09:13.064879  3216 gmsh.cpp:485] Generating omega_2.msh...
+I0325 02:09:13.064913  3216 gmsh.cpp:660] [Gmsh::generate] env.part: 1
+I0325 02:09:13.064919  3216 gmsh.cpp:661] [Gmsh::generate] partitions: 1
+I0325 02:09:13.064924  3216 gmsh.cpp:662] [Gmsh::generate] partitioner: 1
+I0325 02:09:13.128947  3216 gmsh.cpp:752] Writing GMSH file omega_2.msh in ascii format
+I0325 02:09:13.158140  3216 gmsh.cpp:489] Generating omega_2.msh done.
+I0325 02:09:13.159101  3216 gmsh.cpp:501] Broadcast mesh file omega_2.msh to all other mpi processes, (created: 1)
+I0325 02:09:13.159194  3216 importergmsh.hpp:992] Reading Msh file omega_2.msh
+I0325 02:09:13.161691  3216 importergmsh.hpp:1015] GMSH mesh file version : 4.1 format: ascii size of double: 8
+I0325 02:09:13.175343  3216 meshimpl.hpp:1096] We have 135 faces in the database
+I0325 02:09:13.180193  3216 meshimpl.hpp:1370] We have now 3426 faces in the mesh
+I0325 02:09:13.181581  3216 meshimpl.hpp:1908] update boundary points...
+I0325 02:09:13.181720  3216 meshimpl.hpp:1928] update boundary elements...
+I0325 02:09:13.189440  3216 meshimpl.hpp:569] h average : 0.0502793
+I0325 02:09:13.189461  3216 meshimpl.hpp:570]     h min : 0.0415891
+I0325 02:09:13.189465  3216 meshimpl.hpp:571]     h max : 0.0631882
+I0325 02:09:13.809353  3216 ginac.cpp:149] Parsing cbrt(pow(x, 2) + pow(y, 2)):x:y using GiNaC
+I0325 02:09:13.809392  3216 ginac.cpp:171]  . Number of symbols 2
+I0325 02:09:13.809396  3216 ginac.cpp:172]  . symbols : (x,y)
+I0325 02:09:13.809403  3216 ginac.cpp:173]  . Number of params 0
+I0325 02:09:13.809406  3216 ginac.cpp:174]  . symbols : ()
+I0325 02:09:13.809409  3216 ginac.cpp:177] Inserting symbols in symbol table
+I0325 02:09:13.809414  3216 ginac.cpp:197] Inserting params and in symbol table : (x,y)
+I0325 02:09:13.809418  3216 ginac.cpp:208]  . table : (x, x) (y, y)
+I0325 02:09:13.809451  3216 ginac.cpp:211] Defining parser
+I0325 02:09:13.809500  3216 ginac.cpp:214] parse expression: cbrt(pow(x, 2) + pow(y, 2))

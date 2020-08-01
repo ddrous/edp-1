@@ -1,0 +1,117 @@
+Log file created at: 2020/03/25 01:46:10
+Running on machine: aa935533a916
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0325 01:46:10.910141  2703 environment.cpp:1601] File /feel/omega_2.geo found
+I0325 01:46:10.948019  2703 environment.cpp:1601] File /feel/omega_2.geo found
+I0325 01:46:10.949348  2703 gmsh.cpp:462] Generate mesh on processor 0/1
+I0325 01:46:10.949497  2703 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ElementOrder not found ! 
+I0325 01:46:10.949596  2703 gmsh.cpp:388] [Gmsh::generateGeo] Parameter hsize  = (?1$1) = 0.8; now ! (overwrite geo param h !)
+I0325 01:46:10.952949  2703 gmsh.cpp:440] "omega_2.geo" exists and its content correspond to the expected geometry
+I0325 01:46:10.952970  2703 gmsh.cpp:479] Mesh file omega_2.msh generated from geometry omega_2.geo
+I0325 01:46:10.952980  2703 gmsh.cpp:480]  - does mesh file name exists : true
+I0325 01:46:10.954617  2703 gmsh.cpp:485] Generating omega_2.msh...
+I0325 01:46:10.954660  2703 gmsh.cpp:660] [Gmsh::generate] env.part: 1
+I0325 01:46:10.954669  2703 gmsh.cpp:661] [Gmsh::generate] partitions: 1
+I0325 01:46:10.954674  2703 gmsh.cpp:662] [Gmsh::generate] partitioner: 1
+I0325 01:46:10.960747  2703 gmsh.cpp:752] Writing GMSH file omega_2.msh in ascii format
+I0325 01:46:10.966704  2703 gmsh.cpp:489] Generating omega_2.msh done.
+I0325 01:46:10.969122  2703 gmsh.cpp:501] Broadcast mesh file omega_2.msh to all other mpi processes, (created: 1)
+I0325 01:46:10.969197  2703 importergmsh.hpp:992] Reading Msh file omega_2.msh
+I0325 01:46:10.972703  2703 importergmsh.hpp:1015] GMSH mesh file version : 4.1 format: ascii size of double: 8
+I0325 01:46:10.973114  2703 meshimpl.hpp:1096] We have 10 faces in the database
+I0325 01:46:10.973143  2703 meshimpl.hpp:1370] We have now 0 faces in the mesh
+I0325 01:46:10.973155  2703 meshimpl.hpp:1908] update boundary points...
+I0325 01:46:10.973157  2703 meshimpl.hpp:1928] update boundary elements...
+I0325 01:46:10.975191  2703 meshimpl.hpp:569] h average : -nan
+I0325 01:46:10.975221  2703 meshimpl.hpp:570]     h min : 1.79769e+308
+I0325 01:46:10.975234  2703 meshimpl.hpp:571]     h max : 0
+I0325 01:46:11.562177  2703 ginac.cpp:149] Parsing pow(x, 0.66666666666666663):x using GiNaC
+I0325 01:46:11.562235  2703 ginac.cpp:171]  . Number of symbols 1
+I0325 01:46:11.562238  2703 ginac.cpp:172]  . symbols : (x)
+I0325 01:46:11.562245  2703 ginac.cpp:173]  . Number of params 0
+I0325 01:46:11.562248  2703 ginac.cpp:174]  . symbols : ()
+I0325 01:46:11.562252  2703 ginac.cpp:177] Inserting symbols in symbol table
+I0325 01:46:11.562269  2703 ginac.cpp:197] Inserting params and in symbol table : (x)
+I0325 01:46:11.562273  2703 ginac.cpp:208]  . table : (x, x)
+I0325 01:46:11.562304  2703 ginac.cpp:211] Defining parser
+I0325 01:46:11.562345  2703 ginac.cpp:214] parse expression: pow(x, 0.66666666666666663)
+I0325 01:46:11.562433  2703 ginac.cpp:233] e=x^(0.66666666666666663)
+I0325 01:46:11.565419  2703 ginac.cpp:149] Parsing {-0.66666666666666663*pow(x, -0.33333333333333337),0}:x using GiNaC
+I0325 01:46:11.565448  2703 ginac.cpp:171]  . Number of symbols 1
+I0325 01:46:11.565451  2703 ginac.cpp:172]  . symbols : (x)
+I0325 01:46:11.565457  2703 ginac.cpp:173]  . Number of params 0
+I0325 01:46:11.565459  2703 ginac.cpp:174]  . symbols : ()
+I0325 01:46:11.565462  2703 ginac.cpp:177] Inserting symbols in symbol table
+I0325 01:46:11.565465  2703 ginac.cpp:197] Inserting params and in symbol table : (x)
+I0325 01:46:11.565469  2703 ginac.cpp:208]  . table : (x, x)
+I0325 01:46:11.565495  2703 ginac.cpp:211] Defining parser
+I0325 01:46:11.565531  2703 ginac.cpp:214] parse expression: {-0.66666666666666663*pow(x, -0.33333333333333337),0}
+I0325 01:46:11.565598  2703 ginac.cpp:233] e={-(0.66666666666666663)*x^(-0.33333333333333337),0}
+I0325 01:46:11.568256  2703 ginac.cpp:149] Parsing 1 using GiNaC
+I0325 01:46:11.568271  2703 ginac.cpp:171]  . Number of symbols 0
+I0325 01:46:11.568275  2703 ginac.cpp:172]  . symbols : ()
+I0325 01:46:11.568280  2703 ginac.cpp:173]  . Number of params 0
+I0325 01:46:11.568284  2703 ginac.cpp:174]  . symbols : ()
+I0325 01:46:11.568286  2703 ginac.cpp:177] Inserting symbols in symbol table
+I0325 01:46:11.568289  2703 ginac.cpp:197] Inserting params and in symbol table : ()
+I0325 01:46:11.568291  2703 ginac.cpp:208]  . table : 
+I0325 01:46:11.568295  2703 ginac.cpp:211] Defining parser
+I0325 01:46:11.568311  2703 ginac.cpp:214] parse expression: 1
+I0325 01:46:11.568320  2703 ginac.cpp:233] e=1
+I0325 01:46:11.568341  2703 ginac.cpp:149] Parsing -0.66666666666666663*nx*pow(x, -0.33333333333333337):nx:x using GiNaC
+I0325 01:46:11.568347  2703 ginac.cpp:171]  . Number of symbols 2
+I0325 01:46:11.568351  2703 ginac.cpp:172]  . symbols : (nx,x)
+I0325 01:46:11.568354  2703 ginac.cpp:173]  . Number of params 0
+I0325 01:46:11.568356  2703 ginac.cpp:174]  . symbols : ()
+I0325 01:46:11.568361  2703 ginac.cpp:177] Inserting symbols in symbol table
+I0325 01:46:11.568363  2703 ginac.cpp:197] Inserting params and in symbol table : (nx,x)
+I0325 01:46:11.568367  2703 ginac.cpp:208]  . table : (nx, nx) (x, x)
+I0325 01:46:11.568372  2703 ginac.cpp:211] Defining parser
+I0325 01:46:11.568379  2703 ginac.cpp:214] parse expression: -0.66666666666666663*nx*pow(x, -0.33333333333333337)
+I0325 01:46:11.568414  2703 ginac.cpp:233] e=-(0.66666666666666663)*nx*x^(-0.33333333333333337)
+I0325 01:46:11.570905  2703 ginac.cpp:149] Parsing 0.22222222222222224*pow(x, -1.3333333333333335):x using GiNaC
+I0325 01:46:11.571614  2703 ginac.cpp:171]  . Number of symbols 1
+I0325 01:46:11.571621  2703 ginac.cpp:172]  . symbols : (x)
+I0325 01:46:11.571627  2703 ginac.cpp:173]  . Number of params 0
+I0325 01:46:11.571630  2703 ginac.cpp:174]  . symbols : ()
+I0325 01:46:11.571633  2703 ginac.cpp:177] Inserting symbols in symbol table
+I0325 01:46:11.571636  2703 ginac.cpp:197] Inserting params and in symbol table : (x)
+I0325 01:46:11.571640  2703 ginac.cpp:208]  . table : (x, x)
+I0325 01:46:11.571673  2703 ginac.cpp:211] Defining parser
+I0325 01:46:11.571694  2703 ginac.cpp:214] parse expression: 0.22222222222222224*pow(x, -1.3333333333333335)
+I0325 01:46:11.571761  2703 ginac.cpp:233] e=(0.22222222222222224)*x^(-1.3333333333333335)
+I0325 01:46:11.574019  2703 ginac.cpp:149] Parsing pow(x, 0.66666666666666663):x using GiNaC
+I0325 01:46:11.574046  2703 ginac.cpp:171]  . Number of symbols 1
+I0325 01:46:11.574049  2703 ginac.cpp:172]  . symbols : (x)
+I0325 01:46:11.574054  2703 ginac.cpp:173]  . Number of params 0
+I0325 01:46:11.574056  2703 ginac.cpp:174]  . symbols : ()
+I0325 01:46:11.574059  2703 ginac.cpp:177] Inserting symbols in symbol table
+I0325 01:46:11.574062  2703 ginac.cpp:197] Inserting params and in symbol table : (x)
+I0325 01:46:11.574065  2703 ginac.cpp:208]  . table : (x, x)
+I0325 01:46:11.574071  2703 ginac.cpp:211] Defining parser
+I0325 01:46:11.574088  2703 ginac.cpp:214] parse expression: pow(x, 0.66666666666666663)
+I0325 01:46:11.574111  2703 ginac.cpp:233] e=x^(0.66666666666666663)
+I0325 01:46:11.574148  2703 ginac.cpp:149] Parsing 1 using GiNaC
+I0325 01:46:11.574154  2703 ginac.cpp:171]  . Number of symbols 0
+I0325 01:46:11.574156  2703 ginac.cpp:172]  . symbols : ()
+I0325 01:46:11.574160  2703 ginac.cpp:173]  . Number of params 0
+I0325 01:46:11.574162  2703 ginac.cpp:174]  . symbols : ()
+I0325 01:46:11.574165  2703 ginac.cpp:177] Inserting symbols in symbol table
+I0325 01:46:11.574168  2703 ginac.cpp:197] Inserting params and in symbol table : ()
+I0325 01:46:11.574172  2703 ginac.cpp:208]  . table : 
+I0325 01:46:11.574173  2703 ginac.cpp:211] Defining parser
+I0325 01:46:11.574182  2703 ginac.cpp:214] parse expression: 1
+I0325 01:46:11.574187  2703 ginac.cpp:233] e=1
+I0325 01:46:11.574198  2703 ginac.cpp:149] Parsing -0.66666666666666663*nx*pow(x, -0.33333333333333337) - pow(x, 0.66666666666666663):nx:x using GiNaC
+I0325 01:46:11.574204  2703 ginac.cpp:171]  . Number of symbols 2
+I0325 01:46:11.574208  2703 ginac.cpp:172]  . symbols : (nx,x)
+I0325 01:46:11.574210  2703 ginac.cpp:173]  . Number of params 0
+I0325 01:46:11.574213  2703 ginac.cpp:174]  . symbols : ()
+I0325 01:46:11.574216  2703 ginac.cpp:177] Inserting symbols in symbol table
+I0325 01:46:11.574219  2703 ginac.cpp:197] Inserting params and in symbol table : (nx,x)
+I0325 01:46:11.574223  2703 ginac.cpp:208]  . table : (nx, nx) (x, x)
+I0325 01:46:11.574226  2703 ginac.cpp:211] Defining parser
+I0325 01:46:11.574235  2703 ginac.cpp:214] parse expression: -0.66666666666666663*nx*pow(x, -0.33333333333333337) - pow(x, 0.66666666666666663)
+I0325 01:46:11.574265  2703 ginac.cpp:233] e=-x^(0.66666666666666663)-(0.66666666666666663)*nx*x^(-0.33333333333333337)
+I0325 01:46:11.587607  2703 element_impl.hpp:268] creating element u : u
+I0325 01:46:11.587627  2703 element_impl.hpp:268] creating element g : u

@@ -1,0 +1,1 @@
+grad(pow(x, 2) + y*cos(y):x:y)

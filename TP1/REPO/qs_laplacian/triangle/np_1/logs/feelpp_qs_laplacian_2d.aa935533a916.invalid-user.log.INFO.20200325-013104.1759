@@ -1,0 +1,27 @@
+Log file created at: 2020/03/25 01:31:04
+Running on machine: aa935533a916
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0325 01:31:04.653924  1759 environment.cpp:1601] File /feel/omega.geo found
+I0325 01:31:04.688742  1759 environment.cpp:1601] File /feel/omega.geo found
+I0325 01:31:04.690043  1759 gmsh.cpp:462] Generate mesh on processor 0/1
+I0325 01:31:04.690161  1759 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ElementOrder not found ! 
+I0325 01:31:04.690255  1759 gmsh.cpp:388] [Gmsh::generateGeo] Parameter hsize  = (?1$1) = 0.8; now ! (overwrite geo param h !)
+I0325 01:31:04.692119  1759 gmsh.cpp:440] "omega.geo" exists and its content correspond to the expected geometry
+I0325 01:31:04.692137  1759 gmsh.cpp:479] Mesh file omega.msh generated from geometry omega.geo
+I0325 01:31:04.692143  1759 gmsh.cpp:480]  - does mesh file name exists : true
+I0325 01:31:04.693296  1759 gmsh.cpp:485] Generating omega.msh...
+I0325 01:31:04.693333  1759 gmsh.cpp:660] [Gmsh::generate] env.part: 1
+I0325 01:31:04.693338  1759 gmsh.cpp:661] [Gmsh::generate] partitions: 1
+I0325 01:31:04.693341  1759 gmsh.cpp:662] [Gmsh::generate] partitioner: 1
+I0325 01:31:04.702350  1759 gmsh.cpp:752] Writing GMSH file omega.msh in ascii format
+I0325 01:31:04.708602  1759 gmsh.cpp:489] Generating omega.msh done.
+I0325 01:31:04.710197  1759 gmsh.cpp:501] Broadcast mesh file omega.msh to all other mpi processes, (created: 1)
+I0325 01:31:04.710325  1759 importergmsh.hpp:992] Reading Msh file omega.msh
+I0325 01:31:04.713624  1759 importergmsh.hpp:1015] GMSH mesh file version : 4.1 format: ascii size of double: 8
+I0325 01:31:04.714545  1759 meshimpl.hpp:1096] We have 8 faces in the database
+I0325 01:31:04.714643  1759 meshimpl.hpp:1370] We have now 25 faces in the mesh
+I0325 01:31:04.714663  1759 meshimpl.hpp:1908] update boundary points...
+I0325 01:31:04.714670  1759 meshimpl.hpp:1928] update boundary elements...
+I0325 01:31:04.717006  1759 meshimpl.hpp:569] h average : 0.847655
+I0325 01:31:04.717037  1759 meshimpl.hpp:570]     h min : 0.684119
+I0325 01:31:04.717041  1759 meshimpl.hpp:571]     h max : 0.934094

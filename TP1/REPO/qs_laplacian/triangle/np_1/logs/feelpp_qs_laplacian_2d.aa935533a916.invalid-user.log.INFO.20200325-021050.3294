@@ -1,0 +1,28 @@
+Log file created at: 2020/03/25 02:10:50
+Running on machine: aa935533a916
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0325 02:10:50.606262  3294 environment.cpp:1629]  looking for "/feel/omega_2.geo"
+I0325 02:10:50.640161  3294 environment.cpp:1638] File "/feel/omega_2.geo" found
+I0325 02:10:50.640434  3294 environment.cpp:1601] File /feel/omega_2.geo found
+I0325 02:10:50.641541  3294 gmsh.cpp:462] Generate mesh on processor 0/1
+I0325 02:10:50.641638  3294 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ElementOrder not found ! 
+I0325 02:10:50.641717  3294 gmsh.cpp:388] [Gmsh::generateGeo] Parameter hsize  = (?1$1) = 0.05; now ! (overwrite geo param h !)
+I0325 02:10:50.655146  3294 gmsh.cpp:440] "omega_2.geo" exists and its content correspond to the expected geometry
+I0325 02:10:50.655164  3294 gmsh.cpp:479] Mesh file omega_2.msh generated from geometry omega_2.geo
+I0325 02:10:50.655169  3294 gmsh.cpp:480]  - does mesh file name exists : true
+I0325 02:10:50.656409  3294 gmsh.cpp:485] Generating omega_2.msh...
+I0325 02:10:50.656441  3294 gmsh.cpp:660] [Gmsh::generate] env.part: 1
+I0325 02:10:50.656450  3294 gmsh.cpp:661] [Gmsh::generate] partitions: 1
+I0325 02:10:50.656453  3294 gmsh.cpp:662] [Gmsh::generate] partitioner: 1
+I0325 02:10:50.719111  3294 gmsh.cpp:752] Writing GMSH file omega_2.msh in ascii format
+I0325 02:10:50.743433  3294 gmsh.cpp:489] Generating omega_2.msh done.
+I0325 02:10:50.747676  3294 gmsh.cpp:501] Broadcast mesh file omega_2.msh to all other mpi processes, (created: 1)
+I0325 02:10:50.747750  3294 importergmsh.hpp:992] Reading Msh file omega_2.msh
+I0325 02:10:50.750118  3294 importergmsh.hpp:1015] GMSH mesh file version : 4.1 format: ascii size of double: 8
+I0325 02:10:50.762820  3294 meshimpl.hpp:1096] We have 135 faces in the database
+I0325 02:10:50.768497  3294 meshimpl.hpp:1370] We have now 3426 faces in the mesh
+I0325 02:10:50.770202  3294 meshimpl.hpp:1908] update boundary points...
+I0325 02:10:50.770352  3294 meshimpl.hpp:1928] update boundary elements...
+I0325 02:10:50.778965  3294 meshimpl.hpp:569] h average : 0.0502793
+I0325 02:10:50.779001  3294 meshimpl.hpp:570]     h min : 0.0415891
+I0325 02:10:50.779006  3294 meshimpl.hpp:571]     h max : 0.0631882

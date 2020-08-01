@@ -1,0 +1,48 @@
+Log file created at: 2020/03/25 01:41:57
+Running on machine: aa935533a916
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0325 01:41:57.645618  2547 environment.cpp:1601] File /feel/triangle.geo found
+I0325 01:41:57.685525  2547 environment.cpp:1601] File /feel/triangle.geo found
+I0325 01:41:57.688340  2547 gmsh.cpp:462] Generate mesh on processor 0/1
+I0325 01:41:57.688555  2547 gmsh.cpp:367] [Gmsh::generateGeo] Geo geometry parameter ElementOrder not found ! 
+I0325 01:41:57.688669  2547 gmsh.cpp:388] [Gmsh::generateGeo] Parameter hsize  = (?1$1) = 0.8; now ! (overwrite geo param h !)
+I0325 01:41:57.691576  2547 gmsh.cpp:432] "triangle.geo" exists but is different from the expected geometry, we overwrite it now
+I0325 01:41:57.696136  2547 gmsh.cpp:479] Mesh file triangle.msh generated from geometry triangle.geo
+I0325 01:41:57.696153  2547 gmsh.cpp:480]  - does mesh file name exists : true
+I0325 01:41:57.697355  2547 gmsh.cpp:485] Generating triangle.msh...
+I0325 01:41:57.697458  2547 gmsh.cpp:660] [Gmsh::generate] env.part: 1
+I0325 01:41:57.697468  2547 gmsh.cpp:661] [Gmsh::generate] partitions: 1
+I0325 01:41:57.697471  2547 gmsh.cpp:662] [Gmsh::generate] partitioner: 1
+I0325 01:41:57.714164  2547 gmsh.cpp:752] Writing GMSH file triangle.msh in ascii format
+I0325 01:41:57.718277  2547 gmsh.cpp:489] Generating triangle.msh done.
+I0325 01:41:57.725843  2547 gmsh.cpp:501] Broadcast mesh file triangle.msh to all other mpi processes, (created: 1)
+I0325 01:41:57.725915  2547 importergmsh.hpp:992] Reading Msh file triangle.msh
+I0325 01:41:57.728567  2547 importergmsh.hpp:1015] GMSH mesh file version : 4.1 format: ascii size of double: 8
+I0325 01:41:57.729019  2547 meshimpl.hpp:1096] We have 3 faces in the database
+I0325 01:41:57.729077  2547 meshimpl.hpp:1370] We have now 26 faces in the mesh
+I0325 01:41:57.729092  2547 meshimpl.hpp:1908] update boundary points...
+I0325 01:41:57.729097  2547 meshimpl.hpp:1928] update boundary elements...
+I0325 01:41:57.731571  2547 meshimpl.hpp:569] h average : 0.650739
+I0325 01:41:57.731595  2547 meshimpl.hpp:570]     h min : 0.527046
+I0325 01:41:57.731602  2547 meshimpl.hpp:571]     h max : 0.720201
+I0325 01:41:58.311293  2547 ginac.cpp:149] Parsing pow(x, 2.0/3.0):x using GiNaC
+I0325 01:41:58.311321  2547 ginac.cpp:171]  . Number of symbols 1
+I0325 01:41:58.311326  2547 ginac.cpp:172]  . symbols : (x)
+I0325 01:41:58.311331  2547 ginac.cpp:173]  . Number of params 0
+I0325 01:41:58.311334  2547 ginac.cpp:174]  . symbols : ()
+I0325 01:41:58.311337  2547 ginac.cpp:177] Inserting symbols in symbol table
+I0325 01:41:58.311342  2547 ginac.cpp:197] Inserting params and in symbol table : (x)
+I0325 01:41:58.311347  2547 ginac.cpp:208]  . table : (x, x)
+I0325 01:41:58.311375  2547 ginac.cpp:211] Defining parser
+I0325 01:41:58.311411  2547 ginac.cpp:214] parse expression: pow(x, 2.0/3.0)
+I0325 01:41:58.311523  2547 ginac.cpp:233] e=x^(0.6666666666666666667)
+I0325 01:41:58.315469  2547 ginac.cpp:149] Parsing {-2.0/3.0/cbrt(x),0}:x using GiNaC
+I0325 01:41:58.315552  2547 ginac.cpp:171]  . Number of symbols 1
+I0325 01:41:58.315555  2547 ginac.cpp:172]  . symbols : (x)
+I0325 01:41:58.315560  2547 ginac.cpp:173]  . Number of params 0
+I0325 01:41:58.315563  2547 ginac.cpp:174]  . symbols : ()
+I0325 01:41:58.315567  2547 ginac.cpp:177] Inserting symbols in symbol table
+I0325 01:41:58.315570  2547 ginac.cpp:197] Inserting params and in symbol table : (x)
+I0325 01:41:58.315587  2547 ginac.cpp:208]  . table : (x, x)
+I0325 01:41:58.315593  2547 ginac.cpp:211] Defining parser
+I0325 01:41:58.315630  2547 ginac.cpp:214] parse expression: {-2.0/3.0/cbrt(x),0}
